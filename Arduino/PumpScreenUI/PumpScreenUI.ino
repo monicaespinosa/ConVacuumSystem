@@ -1,10 +1,13 @@
 // This library uses as base the LiquidCrystal_i2c library 
 #include <Arduino.h>
 #include <SSD1803A_I2C.h>
+#include<wire.h>
+TwoWire Wire1;
 
-const uint8_t i2cAddr = 0x3C;
+
+const uint8_t i2cAddr = 0x3D;
 const uint8_t resetPin = 5;
-const uint8_t address_pin = 2;
+const uint8_t address_pin = 11;
 uint8_t SelectArrow[8] = {
   0b00000,
   0b00100,
@@ -29,7 +32,7 @@ uint8_t degree[8] = {
 const unsigned long checkInterval = 5000;
 unsigned long lastCheckMillis = 0;
 
-const unsigned long selInterval = 1000;
+const unsigned long selInterval = 100;
 unsigned long lastSelMillis = 0;
 
 char debugInput;
@@ -45,10 +48,10 @@ void setup(){
   Serial.begin(9600);
 
   pinMode(address_pin, OUTPUT);
-  digitalWrite(address_pin, LOW);
+  digitalWrite(address_pin, HIGH);
   pinMode(resetPin, OUTPUT);
   digitalWrite(resetPin, reset);
-  lcd.begin(DOGM204); 
+  lcd.begin(Wire1, DOGM204); 
   lcd.display(SET_ROM_B);
 
   lcd.create(0, SelectArrow);
