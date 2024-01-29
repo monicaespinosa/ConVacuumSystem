@@ -8,6 +8,20 @@ TwoWire Wire1;
 const uint8_t i2cAddr = 0x3D;
 const uint8_t resetPin = 5;
 const uint8_t address_pin = 11;
+
+// Interruption settings
+#define UP 0
+#define DOWN 1
+#define OK 2
+#define CANCEL 3
+const byte interruptPin = 3;
+const byte Y0pin=7;
+const byte Y1pin=8;
+int Y0=0;
+int Y1=0;
+int IntPinVal=0;
+
+
 uint8_t SelectArrow[8] = {
   0b00000,
   0b00100,
@@ -57,6 +71,12 @@ void setup(){
   lcd.create(0, SelectArrow);
   lcd.create(1, degree);
 
+  // Interruption settings
+  pinMode(interruptPin, INPUT);
+  pinMode(Y0pin, INPUT);
+  pinMode(Y1pin, INPUT);
+  attachInterrupt(digitalPinToInterrupt(interruptPin), interruption, RISING);
+
 }
 
 void loop() {
@@ -72,7 +92,11 @@ void loop() {
   }
   //MenuScreen(!PumpStatus, PumpStatus, CursorPos);
   TempScreen(30, 5, 120);
-  delay(500);
+  //delay(500);
+
+  // Testing
+  Serial.print("IntPinValue:");
+  Serial.print(interruptPin);
 }
 
 //========FUNCTIONS======
@@ -182,5 +206,22 @@ void serialEvent(){
       lcd.locate(0,0);
       lcd.print("Reset");
     }
+  }
+}
+
+void interruption(){
+  Serial.println("Interruption activated");
+  Y0=digitalRead(Y0pin);
+  Y1=digitalRead(Y1pin);
+  Serial.println(digitalRead(interruptPin));
+
+  if ((~Y1)&&(~Y0)){
+    //Serial.println("UP button pressed");
+  } else if ((~Y1)&&Y0){
+    //Serial.println("DOWN button pressed");
+  } else if (Y1&&(~Y0)){
+    //Serial.println("OK button pressed");
+  } else if (Y1&&Y0){
+    //Serial.println("CANCEL button pressed");
   }
 }
