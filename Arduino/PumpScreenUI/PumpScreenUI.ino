@@ -14,7 +14,7 @@ const uint8_t address_pin = 11;
 #define DOWN 1
 #define OK 2
 #define CANCEL 3
-const byte interruptPin = 3;
+const byte interruptPin = 2;
 const byte Y0pin=7;
 const byte Y1pin=8;
 int Y0=0;
@@ -75,7 +75,7 @@ void setup(){
   pinMode(interruptPin, INPUT);
   pinMode(Y0pin, INPUT);
   pinMode(Y1pin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(interruptPin), interruption, RISING);
+  attachInterrupt(digitalPinToInterrupt(interruptPin), interruption, FALLING);
 
 }
 
@@ -94,9 +94,6 @@ void loop() {
   TempScreen(30, 5, 120);
   //delay(500);
 
-  // Testing
-  Serial.print("IntPinValue:");
-  Serial.print(interruptPin);
 }
 
 //========FUNCTIONS======
