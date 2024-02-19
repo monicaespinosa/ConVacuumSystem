@@ -3,7 +3,7 @@
 #define PARAMSIZE 4
 
 // Arduino pins
-const int ENRS485Pin = 2; //RS-485 shield enable terminal, on arduino uno it would be digital port 2 using DFROBOT shield
+const int ENRS485Pin = 6; //RS-485 shield enable terminal, on arduino uno it would be digital port 2 using DFROBOT shield
 
 const char endChar = '\r';  // ASCII character 13
 // Setting Parameters
@@ -143,10 +143,9 @@ void loop() {
         queryTurn = 0;
         setupVar = false;
       }
-      
-      Serial2.write(command);
-      Serial2.write(endChar);
-      Serial2.flush();
+      Serial3.write(command);
+      Serial3.write(endChar);
+      Serial3.flush();
 
       memset(command, 0, sizeof(command));
       
@@ -170,10 +169,10 @@ void loop() {
         instructConst(1, READ, ErrorCode, 2, requestData, 0, outCommand);
         queryTurn = 0;
       }
-
-      Serial2.write(outCommand);
-      Serial2.write(endChar);
-      Serial2.flush();
+      
+      Serial3.write(outCommand);
+      Serial3.write(endChar);
+      Serial3.flush();
 
       memset(outCommand, 0, sizeof(outCommand));
 
@@ -188,9 +187,9 @@ void loop() {
       Serial.print(PressureValue, 4);  
       Serial.println(" mbar");
 
-      Serial2.write(command);
-      Serial2.write(endChar);
-      Serial2.flush();
+      Serial3.write(command);
+      Serial3.write(endChar);
+      Serial3.flush();
 
       memset(command, 0, sizeof(command));
 
@@ -202,6 +201,7 @@ void loop() {
   if(millis() - lastReadMillis >= ReadInterval){
     ReadRS485Serial(answer);
     if(ShowAnswer) {
+      //Serial.println(answer);
       SaveAnswer();
       ShowAnswer = false;
     }
@@ -311,9 +311,9 @@ char instructConst(int address, bool mode, char param[], const int dataLength, c
 
 char ReadRS485Serial(char strAnswer[]){
   RS485Mode(READ);
-  if(Serial2.available()){
+  if(Serial3.available()){
     static int i = 0;
-    char ch = Serial2.read();
+    char ch = Serial3.read();
     if(ch != endChar && i < commandSize-1){
       strAnswer[i] = ch;
       i++;
@@ -439,16 +439,16 @@ int ASCIIsum(int start, int end, char string[]){
 // read the output signal of the sensor and transform its value to the sensed pressure based on the characteristic function found in 
 // the datasheet 
 void ReadPressure(){
-  if(Serial3.available() >= 9){
+  if(Serial2.available() >= 9){
     static int i = 0;
-    byte foolByte = Serial3.read();
+    byte foolByte = Serial2.read();
 
     if(millis() - PreviousPresSenMillis >= PresSenInterval){
       byte mesByte = foolByte;
       
       if((mesByte==7) && (millis() - lastReceivedRS232Millis >= ReceivedRS232Interval)){
         for(i = 0; i < 8; i++){
-          receivedData[i] = Serial3.read();
+          receivedData[i] = Serial2.read();
         }
         highByte = receivedData[3];
         lowByte = receivedData[4]; 
@@ -487,9 +487,9 @@ void serialEvent(){
       if(BackPumpStatus == true) instructConst(1, WRITE, OpModeBKP, 3, intShortDataType, 0, outCommand);
       else if(BackPumpStatus == false) instructConst(1, WRITE, OpModeBKP, 3, intShortDataType, 2, outCommand);
     }
-    Serial2.write(outCommand);
-    Serial2.write(endChar);
-    Serial2.flush();
+    Serial3.write(outCommand);
+    Serial3.write(endChar);
+    Serial3.flush();
     RS485Mode(READ);
   }
 }

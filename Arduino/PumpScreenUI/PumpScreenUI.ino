@@ -75,7 +75,7 @@ void setup(){
   pinMode(interruptPin, INPUT);
   pinMode(Y0pin, INPUT);
   pinMode(Y1pin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(interruptPin), interruption, FALLING);
+  //attachInterrupt(digitalPinToInterrupt(interruptPin), interruption, FALLING);
 
 }
 
