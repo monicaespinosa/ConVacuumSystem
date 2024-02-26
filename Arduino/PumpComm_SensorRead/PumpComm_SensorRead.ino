@@ -1,3 +1,4 @@
+#include "SensorRS232Comm.h"
 #define READ 0
 #define WRITE 1
 #define PARAMSIZE 4
@@ -73,8 +74,8 @@ const unsigned long setupInterval = 500;
 unsigned long lastSetupMillis = 0;
 const unsigned long ReadInterval = 17; //RS485 specification
 unsigned long lastReadMillis = 0;
-const unsigned long ReceivedRS232Interval = 20; //RS232 specification
-unsigned long lastReceivedRS232Millis = 0;
+//const unsigned long ReceivedRS232Interval = 20; //RS232 specification
+//unsigned long lastReceivedRS232Millis = 0;
 
 int queryTurn = 0;
 
@@ -84,20 +85,18 @@ double PressRPTData = 0.0;
 int ElecTemp = 0;
 
 // Pressure sensor variables
-byte receivedData[9]={0}; 
+ITR090 pressSensor(Serial2);
 double PressureValue = 0.0;
-byte highByte;
-byte lowByte;
 
 // Interval managing variables for pressure sensor
-const int PresSenInterval = 100;
-unsigned long PreviousPresSenMillis = 0;
+//const int PresSenInterval = 100;
+//unsigned long PreviousPresSenMillis = 0;
 
 void setup() {
   Serial.begin(9600); // debugging
   Serial3.begin(9600, SERIAL_8N1); //TX3RX3 - Serial port used to interface with the RS-232 communication protocol
-  Serial2.begin(9600); //TX2RX2 - Serial port used to interface with the RS-485 communication protocol
-
+  //Serial2.begin(9600); //TX2RX2 - Serial port used to interface with the RS-485 communication protocol
+  pressSensor.init();
   // RS485 Communication control pins
   pinMode(ENRS485Pin, OUTPUT);
 
@@ -208,8 +207,9 @@ void loop() {
     
     lastReadMillis += ReadInterval;
   }
-    
-  ReadPressure();
+
+   PressureValue = pressSensor.readPressure(); 
+  //ReadPressure();
 }
 
 //================================================================== FUNCTIONS ======================================================
@@ -438,7 +438,7 @@ int ASCIIsum(int start, int end, char string[]){
 
 // read the output signal of the sensor and transform its value to the sensed pressure based on the characteristic function found in 
 // the datasheet 
-void ReadPressure(){
+/*void ReadPressure(){
   if(Serial2.available() >= 9){
     static int i = 0;
     byte foolByte = Serial2.read();
@@ -464,7 +464,7 @@ void ReadPressure(){
     }
     
   }
-}
+}*/
 
 void copy(char* src, char* dst, int length, int offset){
   for(int i = 0; i < length; i++){
