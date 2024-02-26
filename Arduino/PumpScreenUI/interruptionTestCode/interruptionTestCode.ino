@@ -3,41 +3,48 @@
 #define DOWN 1
 #define OK 2
 #define CANCEL 3
-const byte interruptPin = 3;
-const byte Y0pin=7;
-const byte Y1pin=8;
-int Y0=0;
-int Y1=0;
+const byte interruptPin = 2;
+const byte L0pin=7;
+const byte L1pin=8;
+int L0=0;
+int L1=0;
 int IntPinVal=0;
 
 void setup() {
   Serial.begin(9600);
 // Interruption settings
   pinMode(interruptPin, INPUT);
-  pinMode(Y0pin, INPUT);
-  pinMode(Y1pin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(interruptPin), interruption, FALLING);
+  pinMode(L0pin, INPUT);
+  pinMode(L1pin, INPUT);
+  attachInterrupt(digitalPinToInterrupt(interruptPin), interruption, RISING);
 }
 
 void loop() {
 // Testing
-  //Serial.print("IntPinValue:");
-  //Serial.println(digitalRead(interruptPin));
+  //Serial.print("L0PinValue:");
+  //Serial.println(digitalRead(L0pin));
 }
 
 void interruption(){
   Serial.println("Interruption activated");
-  Y0=digitalRead(Y0pin);
-  Y1=digitalRead(Y1pin);
-  Serial.println(digitalRead(interruptPin));
+  L0=digitalRead(L0pin);
+  L1=digitalRead(L1pin);
+  Serial.print("L0PinValue:");
+  //Serial.println(digitalRead(L0pin));
+  Serial.println(L0);
+  Serial.print("L1PinValue:");
+  //Serial.println(digitalRead(L1pin));
+  Serial.println(L1);
+  //L0=digitalRead(L0pin);
+  //L1=digitalRead(L1pin);
 
-  if ((~Y1)&&(~Y0)){
-    //Serial.println("UP button pressed");
-  } else if ((~Y1)&&Y0){
-    //Serial.println("DOWN button pressed");
-  } else if (Y1&&(~Y0)){
-    //Serial.println("OK button pressed");
-  } else if (Y1&&Y0){
-    //Serial.println("CANCEL button pressed");
+  if ((L1==0)&&(L0==0)){
+    Serial.println("UP button pressed");
+  } else if ((L1==0)&&(L0==1)){
+    Serial.println("DOWN button pressed");
+  } else if ((L1==1)&&(L0==0)){
+    Serial.println("OK button pressed");
+  } else if ((L1==1)&&(L0==1)){
+    Serial.println("CANCEL button pressed");
   }
 }
