@@ -169,6 +169,7 @@ void MenuScreen(bool BStatus, bool PStatus, int CursorRow){
 }
 
 void TempScreen(int EleTemp, int BearTemp, int MotTemp){
+  Serial.println("Starting Temp Screen");
   lcd.cls();
 
   lcd.locate(0, 0);
@@ -198,6 +199,9 @@ void TempScreen(int EleTemp, int BearTemp, int MotTemp){
     lcd.write(1);
     lcd.print("C");
   }
+
+  lcd.locate(0, 19);
+  lcd.write(0);
   
 }
 
@@ -229,13 +233,13 @@ void screen_state_change(){
       case 1:
         if (pressed_button==CANCEL){
           screen_state=0;
-        } else if (F[3]&&(pressed_button==OK)){
+        } else if ((arrow_state==3)&&(pressed_button==OK)){
           screen_state=3;
-        } else if (F[0]&&(pressed_button==OK)){
+        } else if ((arrow_state==0)&&(pressed_button==OK)){
           screen_state=4;
-        } else if (F[1]&&(pressed_button==OK)){
+        } else if ((arrow_state==1)&&(pressed_button==OK)){
           screen_state=5;
-        } else if (F[2]&&(pressed_button==OK)){
+        } else if ((arrow_state==2)&&(pressed_button==OK)){
           screen_state=2;
         } else{
           screen_state=1;
@@ -248,7 +252,7 @@ void screen_state_change(){
           screen_state=2;
         }
         break;
-      case 3
+      case 3:
         if ((pressed_button==OK)||(pressed_button==CANCEL)){
           screen_state=1;
         } else {
@@ -273,7 +277,7 @@ void screen_state_change(){
         screen_state=0;
         break;
     }
-    int_activated=false;
+    int_1_activated=false;
   }
 }
 
