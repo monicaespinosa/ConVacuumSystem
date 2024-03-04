@@ -10,17 +10,23 @@ const uint8_t resetPin = 5;
 const uint8_t address_pin = 11;
 
 // Interruption settings
+const byte interruptPin = 2;
+const byte L0pin=7;
+const byte L1pin=8;
+int L0=0;
+int L1=0;
+
+// ***** State machine *****
 #define UP 0
 #define DOWN 1
 #define OK 2
 #define CANCEL 3
-const byte interruptPin = 2;
-const byte Y0pin=7;
-const byte Y1pin=8;
-int Y0=0;
-int Y1=0;
-int IntPinVal=0;
-
+int arrow_state=0; // arrow position
+int last_arrow_state=3; // highest possible arrow position
+int screen_state=0;
+bool int_1_activated=false; // Screen state
+bool int_2_activated=false; // Arrow state
+int pressed_button=UP;
 
 uint8_t SelectArrow[8] = {
   0b00000,
@@ -73,9 +79,9 @@ void setup(){
 
   // Interruption settings
   pinMode(interruptPin, INPUT);
-  pinMode(Y0pin, INPUT);
-  pinMode(Y1pin, INPUT);
-  //attachInterrupt(digitalPinToInterrupt(interruptPin), interruption, FALLING);
+  pinMode(L0pin, INPUT);
+  pinMode(L1pin, INPUT);
+  attachInterrupt(digitalPinToInterrupt(interruptPin), interruption, RISING);
 
 }
 
@@ -93,6 +99,10 @@ void loop() {
   //MenuScreen(!PumpStatus, PumpStatus, CursorPos);
   TempScreen(30, 5, 120);
   //delay(500);
+  // ***** State Machine *****
+  //arrow_state_change();
+  //screen_state_change();
+  //state_machine();
 
 }
 
@@ -206,19 +216,101 @@ void serialEvent(){
   }
 }
 
+void screen_state_change(){
+  if (int_1_activated){
+    switch (screen_state){
+      case 0:
+        if (pressed_button==OK){
+          screen_state=1;
+        } else {
+          screen_state=0;
+        }
+        break;
+      case 1:
+        if (pressed_button==CANCEL){
+          screen_state=0;
+        } else if (F[3]&&(pressed_button==OK)){
+          screen_state=3;
+        } else if (F[0]&&(pressed_button==OK)){
+          screen_state=4;
+        } else if (F[1]&&(pressed_button==OK)){
+          screen_state=5;
+        } else if (F[2]&&(pressed_button==OK)){
+          screen_state=2;
+        } else{
+          screen_state=1;
+        }
+        break;
+      case 2:
+        if ((pressed_button==OK)||(pressed_button==CANCEL)){
+          screen_state=1;
+        } else {
+          screen_state=2;
+        }
+        break;
+      case 3
+        if ((pressed_button==OK)||(pressed_button==CANCEL)){
+          screen_state=1;
+        } else {
+          screen_state=3;
+        }
+        break;
+      case 4:
+        if ((pressed_button==OK)||(pressed_button==CANCEL)){
+          screen_state=1;
+        } else {
+          screen_state=4;
+        }
+        break;
+      case 5:
+        if ((pressed_button==OK)||(pressed_button==CANCEL)){
+          screen_state=1;
+        } else {
+          screen_state=5;
+        }
+        break;
+      default:
+        screen_state=0;
+        break;
+    }
+    int_activated=false;
+  }
+}
+
+void arrow_state_change(){
+  if (int_2_activated){
+    switch (pressed_button){
+      case UP:
+        if (arrow_state!=0) {
+          arrow_state=arrow_state-1;
+        }
+        break;
+      case DOWN:
+        if (arrow_state!=last_arrow_state){
+          arrow_state=arrow_state+1;
+        }
+        break;
+    }
+  }
+  int_2_activated=false;
+}
+
 void interruption(){
   Serial.println("Interruption activated");
-  Y0=digitalRead(Y0pin);
-  Y1=digitalRead(Y1pin);
-  Serial.println(digitalRead(interruptPin));
+  L0=digitalRead(L0pin);
+  L1=digitalRead(L1pin);
 
-  if ((~Y1)&&(~Y0)){
-    //Serial.println("UP button pressed");
-  } else if ((~Y1)&&Y0){
-    //Serial.println("DOWN button pressed");
-  } else if (Y1&&(~Y0)){
-    //Serial.println("OK button pressed");
-  } else if (Y1&&Y0){
-    //Serial.println("CANCEL button pressed");
+  if ((L1==0)&&(L0==0)){
+    pressed_button=UP;
+    int_2_activated=true;
+  } else if ((L1==0)&&(L0==1)){
+    pressed_button=DOWN;
+    int_2_activated=true;
+  } else if ((L1==1)&&(L0==0)){
+    pressed_button=OK;
+    int_1_activated=true;
+  } else if ((L1==1)&&(L0==1)){
+    pressed_button=CANCEL;
+    int_1_activated=true;
   }
 }
