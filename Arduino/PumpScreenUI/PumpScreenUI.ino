@@ -96,12 +96,13 @@ void loop() {
     if (CursorPos == 4) CursorPos = 0;
     lastSelMillis += selInterval;
   }
-  //MenuScreen(!PumpStatus, PumpStatus, CursorPos);
-  TempScreen(30, 5, 120);
+  
+  //TempScreen(30, 5, 120);
   //delay(500);
   // ***** State Machine *****
-  //arrow_state_change();
+  arrow_state_change();
   //screen_state_change();
+  MenuScreen(!PumpStatus, PumpStatus);
   //state_machine();
 
 }
@@ -143,7 +144,7 @@ void PressureScreen(bool Status, double pressure1, int exp1, double pressure2, i
 
 // if user presses the "Ok" button without an other action, 
 // the menu will be displayed - function still not programmed
-void MenuScreen(bool BStatus, bool PStatus, int CursorRow){
+void MenuScreen(bool BStatus, bool PStatus){
   lcd.cls();
 
   lcd.locate(0, 0);
@@ -164,7 +165,7 @@ void MenuScreen(bool BStatus, bool PStatus, int CursorRow){
   lcd.locate(3, 0);
   lcd.print("Pump.Stat. settings");
 
-  lcd.locate(CursorRow, 19);
+  lcd.locate(arrow_state, 19);
   lcd.write(0);
 }
 
@@ -198,11 +199,7 @@ void TempScreen(int EleTemp, int BearTemp, int MotTemp){
     lcd.locate(i, 18);
     lcd.write(1);
     lcd.print("C");
-  }
-
-  lcd.locate(0, 19);
-  lcd.write(0);
-  
+  }  
 }
 
 void serialEvent(){
