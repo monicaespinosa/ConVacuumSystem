@@ -90,20 +90,16 @@ void loop() {
   if(millis() - lastCheckMillis >= checkInterval){
     PumpStatus = !PumpStatus;
     lastCheckMillis += checkInterval;
+    //MenuScreen(!PumpStatus, PumpStatus);
+    //TempScreen(30, 5, 120);
   }
-  if(millis() - lastSelMillis >= selInterval){
-    CursorPos ++;
-    if (CursorPos == 4) CursorPos = 0;
-    lastSelMillis += selInterval;
-  }
+
   
   //TempScreen(30, 5, 120);
-  //delay(500);
   // ***** State Machine *****
   arrow_state_change();
-  //screen_state_change();
-  MenuScreen(!PumpStatus, PumpStatus);
-  //state_machine();
+  screen_state_change();
+  state_machine();
 
 }
 
@@ -146,11 +142,13 @@ void PressureScreen(bool Status, double pressure1, int exp1, double pressure2, i
 // the menu will be displayed - function still not programmed
 void MenuScreen(bool BStatus, bool PStatus){
   lcd.cls();
-
+  //Serial.println("Hola");
   lcd.locate(0, 0);
   lcd.print("Turn ");
+  
   if(BStatus) lcd.print("ON");
   else lcd.print("OFF");
+  
   lcd.print(" Back. pump");
 
   lcd.locate(1, 0);
@@ -167,10 +165,17 @@ void MenuScreen(bool BStatus, bool PStatus){
 
   lcd.locate(arrow_state, 19);
   lcd.write(0);
+  /*
+  for(int i = 0; i < 3; i++){
+    lcd.locate(i, 18);
+    lcd.write(1);
+    lcd.print("C");
+  }
+  */
 }
 
 void TempScreen(int EleTemp, int BearTemp, int MotTemp){
-  Serial.println("Starting Temp Screen");
+  //Serial.println("Starting Temp Screen");
   lcd.cls();
 
   lcd.locate(0, 0);
@@ -200,6 +205,24 @@ void TempScreen(int EleTemp, int BearTemp, int MotTemp){
     lcd.write(1);
     lcd.print("C");
   }  
+}
+
+void TempSettings(){
+  lcd.cls();
+  lcd.locate(0, 0);
+  lcd.print("Temp settings");
+}
+
+void BestaetigungScreen(bool Status, int PumpNumber){ // PumpNumber is 0 for the back pump, 1 for the turbo pump
+  lcd.cls();
+  lcd.locate(0, 0);
+  lcd.print("Turn ");
+  
+  if(Status) lcd.print("ON ");
+  else lcd.print("OFF ");
+  lcd.locate(1, 0);
+  if(PumpNumber==0) lcd.print("Back Pump?");
+  else lcd.print("Turbo Pump?");
 }
 
 void serialEvent(){
@@ -294,6 +317,29 @@ void arrow_state_change(){
     }
   }
   int_2_activated=false;
+}
+
+void state_machine(){
+  switch (screen_state){
+    case 0:
+      PressureScreen(PumpStatus, 0.1, -3, 0.2, -4);
+      break;
+    case 1:
+      MenuScreen(!PumpStatus, PumpStatus);
+      break;
+    case 2: 
+      TempScreen(30, 5, 120);
+      break;
+    case 3:
+      TempSettings();
+      break;
+    case 4:
+      BestaetigungScreen(PumpStatus, 0); // Back Pump status goes in
+      break;
+    case 5:
+      BestaetigungScreen(PumpStatus, 1); // Turbo Pump status goes in
+      break;
+  }
 }
 
 void interruption(){
