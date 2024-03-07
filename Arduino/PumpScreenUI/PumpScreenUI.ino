@@ -62,6 +62,7 @@ bool PumpStatus = false;
 bool reset = HIGH;
 
 SSD1803A_I2C lcd(i2cAddr, resetPin);
+int arrow_state_test=0;
 
 void setup(){
   
@@ -100,7 +101,6 @@ void loop() {
   arrow_state_change();
   screen_state_change();
   state_machine();
-
 }
 
 //========FUNCTIONS======
@@ -140,6 +140,13 @@ void PressureScreen(bool Status, double pressure1, int exp1, double pressure2, i
 
 // if user presses the "Ok" button without an other action, 
 // the menu will be displayed - function still not programmed
+void ArrowTest(){
+  if (arrow_state_test!=arrow_state) lcd.cls();
+  lcd.locate(arrow_state, 19);
+  lcd.write(0);
+  arrow_state_test=arrow_state;
+}
+
 void MenuScreen(bool BStatus, bool PStatus){
   lcd.cls();
   //Serial.println("Hola");
@@ -349,15 +356,19 @@ void interruption(){
 
   if ((L1==0)&&(L0==0)){
     pressed_button=UP;
+    //Serial.println("UP");
     int_2_activated=true;
   } else if ((L1==0)&&(L0==1)){
     pressed_button=DOWN;
+    //Serial.println("DOWN");
     int_2_activated=true;
   } else if ((L1==1)&&(L0==0)){
     pressed_button=OK;
+    //Serial.println("OK");
     int_1_activated=true;
   } else if ((L1==1)&&(L0==1)){
     pressed_button=CANCEL;
+    //Serial.println("CANCEL");
     int_1_activated=true;
   }
 }
