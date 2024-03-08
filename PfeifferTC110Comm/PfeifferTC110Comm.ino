@@ -6,6 +6,7 @@ const int ENRS485Pin = 6;
 TC110 turboPump(byte(ENRS485Pin), Serial3);
 
 char command[COMMANDSIZE] = {0};
+char outCommand[COMMANDSIZE] = {0};
 char answer[COMMANDSIZE+1] = {0};
 char paramStr[PARAMSIZE] = {0};
 
@@ -114,14 +115,14 @@ void loop() {
     if(millis() - lastCheckPressureMillis >= checkPressureInterval){ 
       turboPump.RS485Mode(WRITE);
 
-      instructConst(1, READ, param["Pressure1"], 0, command);
+      instructConst(1, READ, param["Pressure1"], 0, outCommand);
       //Serial.print("ITR 090: ");
       //Serial.print(PressureValue, 4);  
       //Serial.println(" mbar");
+      
+      turboPump.sendCommand(outCommand);
 
-      turboPump.sendCommand(command);
-
-      memset(command, 0, sizeof(command));
+      memset(outCommand, 0, sizeof(outCommand));
 
       lastCheckPressureMillis += checkPressureInterval;
     }
@@ -142,22 +143,20 @@ void loop() {
 
 //================================================================== FUNCTIONS ======================================================
  
-/*void serialEvent(){
+void serialEvent(){
   while(Serial.available()){
     debugInput = Serial.read();
-    RS485Mode(WRITE);
+    turboPump.RS485Mode(WRITE);
     if(debugInput == 'P'){
       MotorPumpStatus = !MotorPumpStatus;
-      if(MotorPumpStatus == true) instructConst(1, WRITE, MotorPump, 6, boolDataType, 1, outCommand);
-      else if(MotorPumpStatus == false) instructConst(1, WRITE, MotorPump, 6, boolDataType, 0, outCommand);
+      if(MotorPumpStatus == true) instructConst(1, WRITE, param["MotorPump"], 1, outCommand);
+      else if(MotorPumpStatus == false) instructConst(1, WRITE, param["MotorPump"], 0, outCommand);
     }else if(debugInput == 'O'){
       BackPumpStatus = !BackPumpStatus;
-      if(BackPumpStatus == true) instructConst(1, WRITE, OpModeBKP, 3, intShortDataType, 0, outCommand);
-      else if(BackPumpStatus == false) instructConst(1, WRITE, OpModeBKP, 3, intShortDataType, 2, outCommand);
+      if(BackPumpStatus == true) instructConst(1, WRITE, param["OpModeBKP"], 0, outCommand);
+      else if(BackPumpStatus == false) instructConst(1, WRITE, param["OpModeBKP"], 2, outCommand);
     }
-    Serial2.write(outCommand);
-    Serial2.write(endChar);
-    Serial2.flush();
-    RS485Mode(READ);
+    turboPump.sendCommand(outCommand);
+    turboPump.RS485Mode(READ);
   }
-}*/
+}

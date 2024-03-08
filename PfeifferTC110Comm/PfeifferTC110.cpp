@@ -76,6 +76,7 @@ TC110::TC110(byte ENPin, HardwareSerial &port):serialPort(port){
 
 void TC110::init(){
   serialPort.begin(9600); //Protocol RS485 has a BAUDRATE of 9600, therefore the serial port is fixed with this BAUDRATE 
+  Serial.begin(9600);
   pinMode(ENPin, OUTPUT);
   RS485Mode(READ); //The idea is that the Master hears constantly the channel to receive any possible info from the slave.
 }
@@ -131,10 +132,12 @@ void TC110::SaveAnswer(char *answer){
     if (strcmp(paramStr, param["PumpngStatn"].parameter) == 0){
       copy(answer, param["PumpngStatn"].receivedValue, dataLength, PARAMCOMMSIZE);
       param["PumpngStatn"].receivedValue[dataLength] = '\0';
+      Serial.print(param["PumpngStatn"].receivedValue);
 
     }else if(strcmp(paramStr, param["MotorPump"].parameter) == 0){
       copy(answer, param["MotorPump"].receivedValue, dataLength, PARAMCOMMSIZE);
       param["MotorPump"].receivedValue[dataLength] = '\0';
+      Serial.print(param["MotorPump"].receivedValue);
 
     //Speed of the turbo pump
     }else if(strcmp(paramStr, param["ActualSpd"].parameter) == 0){
@@ -157,24 +160,24 @@ void TC110::SaveAnswer(char *answer){
       copy(answer, SensedPressure, dataLength, PARAMCOMMSIZE);
       SensedPressure[dataLength]='\0';
 
-      char expData[2];
-      char valData[4];
+      char expData[3];
+      char valData[5];
 
       copy(SensedPressure, expData, 2, 4);
       copy(SensedPressure, valData, 4, 0);
-
+      expData[2] = '\0';
+      valData[4] = '\0';
       memset(SensedPressure, 0, sizeof(SensedPressure));
 
       int exp = atoi(expData) - 20;
       double val = double(atof(valData))*pow(10, -3);
-
+    
       memset(expData, 0, sizeof(expData));
       itoa(exp, expData, 10);
-
       dtostrf(val, -4, 3, param["Pressure1"].receivedValue);
       strcat(param["Pressure1"].receivedValue, "E");
       strcat(param["Pressure1"].receivedValue, expData);
-      param["Pressure1"].receivedValue[8]='\0';
+      param["Pressure1"].receivedValue[9]='\0';
 
     //Sensor name from DCU
     }else if(strcmp(paramStr, param["PrsSn1Name"].parameter)==0){
@@ -214,17 +217,20 @@ char instructConst(int address, bool mode, pumpParameter param, int inData, char
   //Depending on the communication mode, it adds the next 2 characters to the array
   if(mode) strcat(str, "10");
   else strcat(str, "00");
-
   
   strcat(str, param.parameter);//strcat(str, param);
   
-  itoa(param.dataLength, i, 10);//itoa(dataLength, i, 10);
+  if(!mode) strcat(str, "02");
+  else{
+    itoa(param.dataLength, i, 10);//itoa(dataLength, i, 10);
 
-  if(param.dataLength < 10){
-    strcat(str, "0");
-    strcat(str, i);
-    
-  }else strcat(str, i);
+    if(param.dataLength < 10){
+      strcat(str, "0");
+      strcat(str, i);
+      
+    }else strcat(str, i);
+  }
+  
   
   if(!mode) strcat(str, "=?");
     
@@ -321,7 +327,7 @@ bool getAnswerStat(){
 }
 
 bool changeAnswerStat(){
-  return !saveAnswer;
+  return saveAnswer = false;
 }
 
 
