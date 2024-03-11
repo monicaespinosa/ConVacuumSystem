@@ -80,8 +80,6 @@ uint8_t degree[8] = {
   };
 
 
-char debugInput;
-bool PumpStatus = false; // ================= This variable should be removed and changed for the real one in the functions that use it ===============
 bool reset = HIGH;
 
 SSD1803A_I2C lcd(i2cAddr, resetPin);
@@ -374,7 +372,7 @@ void BestaetigungScreen(bool Status, int PumpNumber){ // PumpNumber is 0 for the
 void screenSerialEvent(){
   while(Serial.available()){
     debugInput = Serial.read();
-    if(debugInput == 'P'){
+    if(debugInput == 'RS'){
       reset = LOW;
       digitalWrite(resetPin, reset);
       delay(20);
@@ -468,10 +466,10 @@ void arrow_state_change(){
 void state_machine(){
   switch (screen_state){
     case 0:
-      PressureScreen(PumpStatus, 0.1, -3, 0.2, -4);
+      PressureScreen(MotorPumpStatus, 0.1, -3, 0.2, -4);
       break;
     case 1:
-      MenuScreen(!PumpStatus, PumpStatus);
+      MenuScreen(BackPumpStatus, MotorPumpStatus);
       break;
     case 2: 
       TempScreen(30, 5, 120);
@@ -480,10 +478,10 @@ void state_machine(){
       TempSettings();
       break;
     case 4:
-      BestaetigungScreen(PumpStatus, 0); // Back Pump status goes in
+      BestaetigungScreen(BackPumpStatus, 0); // Back Pump status goes in
       break;
     case 5:
-      BestaetigungScreen(PumpStatus, 1); // Turbo Pump status goes in
+      BestaetigungScreen(MotorPumpStatus, 1); // Turbo Pump status goes in
       break;
   }
 }
