@@ -104,7 +104,7 @@ void loop() {
 }
 
 //========FUNCTIONS======
-//Ths will be the main screen of the GUI
+//This will be the main screen of the GUI
 void PressureScreen(bool Status, double pressure1, int exp1, double pressure2, int exp2){
   lcd.cls();
   lcd.locate(0,0);
