@@ -291,8 +291,9 @@ void ArrowTest(){
 
 void MenuScreen(char *BStatus, char *PStatus){
   lcd.cls();
-  //Serial.println("Hola");
-  lcd.locate(0, 0);
+  lcd.locate(arrow_state, 19);
+  lcd.write(0);  lcd.locate(0, 0);
+  
   lcd.print("Turn ");
   
   if(strcmp(BStatus, "000")==0) lcd.print("ON"); // Check how the value is actually returned
@@ -312,15 +313,6 @@ void MenuScreen(char *BStatus, char *PStatus){
   lcd.locate(3, 0);
   lcd.print("Pump.Stat. settings");
 
-  lcd.locate(arrow_state, 19);
-  lcd.write(0);
-  /*
-  for(int i = 0; i < 3; i++){
-    lcd.locate(i, 18);
-    lcd.write(1);
-    lcd.print("C");
-  }
-  */
 }
 
 void TempScreen(char *Temp1, char *Temp2, char *Temp3){
@@ -364,6 +356,15 @@ void TempSettings(){
   lcd.cls();
   lcd.locate(0, 0);
   lcd.print("Temp settings");
+  lcd.locate(1, 0);
+  lcd.print("    ");
+  lcd.locate(2, 0);
+  lcd.print("    ");
+
+  for(int i = 0; i < 3; i++){
+    lcd.locate(3, i);
+    lcd.print(" ");
+  }
 }
 
 void BestaetigungScreen(char *Status, int PumpNumber){ // PumpNumber is 0 for the back pump, 1 for the turbo pump
@@ -373,9 +374,13 @@ void BestaetigungScreen(char *Status, int PumpNumber){ // PumpNumber is 0 for th
   
   if(strcmp(Status, "000")) lcd.print("ON "); // change as Status can be a char array of 3 or 6 characters 
   else lcd.print("OFF ");
-  lcd.locate(1, 0);
   if(PumpNumber==0) lcd.print("Back Pump?");
   else lcd.print("Turbo Pump?");
+
+  lcd.locate(2, 0);
+  lcd.print("    ");
+  lcd.locate(3, 0);
+  lcd.print("    ");
 }
 
 void screenSerialEvent(){
@@ -451,6 +456,8 @@ void screen_state_change(){
         break;
     }
     int_1_activated=false;
+    Serial.print("Screen state: ");
+    Serial.println(screen_state);
   }
 }
 
@@ -468,8 +475,10 @@ void arrow_state_change(){
         }
         break;
     }
+    int_2_activated=false;
+    Serial.print("Arrow state: ");
+    Serial.println(arrow_state);
   }
-  int_2_activated=false;
 }
 
 void state_machine(){
