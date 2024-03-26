@@ -249,6 +249,22 @@ void serialEvent(){
   }
 }
 
+void changePumpState(int pumpNumber){ // 0 for BP, 1 for MP
+  turboPump.RS485Mode(WRITE);
+  if(pumpNumber == 1){
+    MotorPumpStatus = !MotorPumpStatus;
+    if(MotorPumpStatus == true) instructConst(1, WRITE, param["MotorPump"], 1, outCommand);
+    else if(MotorPumpStatus == false) instructConst(1, WRITE, param["MotorPump"], 0, outCommand);
+  }else if(pumpNumber==0){
+    BackPumpStatus = !BackPumpStatus;
+    if(BackPumpStatus == true) instructConst(1, WRITE, param["OpModeBKP"], 0, outCommand);
+    else if(BackPumpStatus == false) instructConst(1, WRITE, param["OpModeBKP"], 2, outCommand);
+  }
+  turboPump.sendCommand(outCommand);
+  turboPump.RS485Mode(READ);
+  memset(outCommand, 0, sizeof(outCommand));
+}
+
 
 // ______________________ Screen functions __________________________
 
@@ -440,6 +456,7 @@ void screen_state_change(){
       case 4:
         if ((pressed_button==OK)||(pressed_button==CANCEL)){
           screen_state=1;
+          if (pressed_button==OK) changePumpState(0);
         } else {
           screen_state=4;
         }
@@ -447,6 +464,7 @@ void screen_state_change(){
       case 5:
         if ((pressed_button==OK)||(pressed_button==CANCEL)){
           screen_state=1;
+          if (pressed_button==OK) changePumpState(1);
         } else {
           screen_state=5;
         }

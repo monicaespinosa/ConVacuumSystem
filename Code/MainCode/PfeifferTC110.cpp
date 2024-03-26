@@ -33,26 +33,26 @@ struct pumpParameter paramList[40]{
 
 // Parameter hashmap - this way, the actual name of the parameter can be related to the values
 paramDict param = {
-  {"ErrorAckn"  , paramList[0]},
-  {"PumpngStatn", paramList[1]},
-  {"CfgSpdSwPt" , paramList[2]},
-  {"MotorPump"  , paramList[3]},
-  {"OpModeBKP"  , paramList[4]},
-  {"SpdSetMode" , paramList[5]},
-  {"GasMode"    , paramList[6]},
-  {"CfgAccA1"   , paramList[7]},
-  {"CfgAccB1"   , paramList[8]},
+  {"ErrorAckn"  , paramList[0]}, // error acknowledgement, immer 1
+  {"PumpngStatn", paramList[1]}, // Pumping station, 0 off / 1 on and error acknowledgement
+  {"CfgSpdSwPt" , paramList[2]}, // Configuration rotation speed switch point 0 switch point 1/ 1 switch points 1&2
+  {"MotorPump"  , paramList[3]}, // 0 off / 1 on
+  {"OpModeBKP"  , paramList[4]}, // Operation mode backing pump, 0 continuos / 1 intermittent / 2 delayed switching on / 3 delayed interval operation
+  {"SpdSetMode" , paramList[5]}, // Rotation speed setting mode 0 off / 1 on
+  {"GasMode"    , paramList[6]}, // Gas mode, 0 heavy gases/ 1 light gases/ 2 Hhlium
+  {"CfgAccA1"   , paramList[7]}, // Configuration accessory connection A1, 1 venting valve / 2 heating / 3 backing pump / 5 sealing gas / 8 power failure venting unit (...)
+  {"CfgAccB1"   , paramList[8]}, // Configuration accessory connection B1 
 
-  {"ErrorCode"  , paramList[9]},
-  {"SetRotSpd"  , paramList[10]},
-  {"ActualSpd"  , paramList[11]},
-  {"TempElec"   , paramList[12]},
-  {"TempPmpBot" , paramList[13]},
-  {"TempMotor"  , paramList[14]},
+  {"ErrorCode"  , paramList[9]}, 
+  {"SetRotSpd"  , paramList[10]}, // Set rotation speed, 0 to 999999 Hz
+  {"ActualSpd"  , paramList[11]}, // actual rotation speed, 0 to 999999 Hz
+  {"TempElec"   , paramList[12]}, // Temperature electronics, 0 to 999999 °C
+  {"TempPmpBot" , paramList[13]}, // Temperature pump bottom part, 0 to 999999 °C
+  {"TempMotor"  , paramList[14]}, // Temperature motor, 0 to 999999 °C
 
-  {"PrsSn1Name" , paramList[15]},
-  {"Pressure1"  , paramList[16]},
-  {"PrsCorriP1" , paramList[17]}
+  {"PrsSn1Name" , paramList[15]}, // Name sensor 1
+  {"Pressure1"  , paramList[16]}, // Pressure value 1
+  {"PrsCorriP1" , paramList[17]} // Correction factor 1
 };
 
 const char endChar = '\r';  // ASCII character 13

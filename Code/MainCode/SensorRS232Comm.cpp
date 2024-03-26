@@ -62,6 +62,7 @@ double ITR090::readPressure() {
       
       // Check if the byte received from the sensor is equal to 7
       if ((mesByte == 7)&& (receivedData[0]==5)&&(abs(used_sum-float(receivedData[7]))<0.01) && (millis() - lastReceivedRS232Millis >= ReceivedRS232Interval)) {
+        /*
         Serial.print("ITR 90 sensor synchronized. Received data: ");
         Serial.print(mesByte);
         Serial.print(" ");
@@ -70,7 +71,7 @@ double ITR090::readPressure() {
           Serial.print(" ");
         }
         Serial.println(" ");
-
+        */
         highByte = receivedData[3]; // Store the higher-order byte in highByte
         lowByte = receivedData[4]; // Store the lower-order byte in lowByte
         /*
