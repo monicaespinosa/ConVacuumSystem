@@ -188,6 +188,10 @@ void TC110::SaveAnswer(char *answer){
       copy(answer, param["ErrorCode"].receivedValue, dataLength, PARAMCOMMSIZE);
       param["ErrorCode"].receivedValue[dataLength] = '\0';
 
+    }else if(strcmp(paramStr, param["OpModeBKP"].parameter) == 0 ){             // neu
+      copy(answer, param["OpModeBKP"].receivedValue, dataLength, PARAMCOMMSIZE);
+      param["OpModeBKP"].receivedValue[dataLength] = '\0';
+
     }else{
       return;
     }

@@ -1,4 +1,5 @@
 import serial.tools.list_ports
+from graphics import *
 ports=serial.tools.list_ports.comports()
 serialInst = serial.Serial()
 
@@ -19,7 +20,20 @@ serialInst.baudrate=9600
 serialInst.port=portVar
 serialInst.open()
 
-while True
-if serialInst.in_waiting:
-    packet=serialInst.readline()
-    print(packet.decode('utf').rstrip('\n'))
+while True:
+    if serialInst.in_waiting:
+        packet=serialInst.readline()
+        print(packet.decode('utf').rstrip('\n'))
+        
+serialInst.close()
+
+def main():
+    win=GraphWin("Program",300,300)
+
+    message=Text(Point(100,100),"Hello")
+    message.draw(win)
+
+    win.getMouse()
+    win.close()
+
+main()

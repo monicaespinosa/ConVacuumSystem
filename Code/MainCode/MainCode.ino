@@ -63,6 +63,9 @@ int screen_state=0;
 bool int_1_activated=false; // Screen state
 bool int_2_activated=false; // Arrow state
 int pressed_button=UP;
+int change_state_flag=2; // 2 means no state should be changed
+int changeStateMillis=0;
+int changeStateInterval=25;
 
 uint8_t SelectArrow[8] = {
   0b00000,
@@ -221,6 +224,21 @@ void loop() {
     
     lastReadMillis += ReadInterval;
   }
+
+  if((millis() - changeStateMillis >= changeStateInterval)&&(change_state_flag!=2)){
+    changePumpState(change_state_flag);
+    change_state_flag=2;
+    changeStateMillis += changeStateInterval;
+  }
+
+
+  /*
+  Aqui haz una funcion de tipo intervalo tal como se ha ido manejando la comunicacion en todo el programa
+  if((millis() - lastChangedMillis >= ChangedMillis)&&(flag)){ // para ejecutar la funcion que invia la info a la bomba
+  aqui ejecutarias la funcion de ChangePumpState, va a generar un poquito de lag con respecto al usuario pero al final en 
+  teoria deberia funcionar. mi sugerencia es que el intervalo sea mayor que 17 ms pero que igual  que sea bastante seguido
+  } 
+  */
 
   // ***** Screen State Machine *****
   arrow_state_change();
@@ -456,7 +474,11 @@ void screen_state_change(){
       case 4:
         if ((pressed_button==OK)||(pressed_button==CANCEL)){
           screen_state=1;
-          if (pressed_button==OK) changePumpState(0);
+          if (pressed_button==OK) change_state_flag=0; // haz que esta condicion te levante un flag para poder ejecutar otra funcion en el loop, 
+                                                      // ya tu decides si es un flag general para las bomabas o si es un flag segun el numero de bomba
+                                                      // Esto hazlo en todas las condiciones que quieras que ejecuten una funciüon de comunicacion
+                                                      // el problema puede estar en que tienes coliciones con los mensajes de la bomba o que de alguna 
+                                                      // forma no entiende que debe enviar ese comando en especifico.  
         } else {
           screen_state=4;
         }
@@ -464,7 +486,7 @@ void screen_state_change(){
       case 5:
         if ((pressed_button==OK)||(pressed_button==CANCEL)){
           screen_state=1;
-          if (pressed_button==OK) changePumpState(1);
+          if (pressed_button==OK) change_state_flag=1;
         } else {
           screen_state=5;
         }
