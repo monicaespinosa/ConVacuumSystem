@@ -232,14 +232,6 @@ void loop() {
   }
 
 
-  /*
-  Aqui haz una funcion de tipo intervalo tal como se ha ido manejando la comunicacion en todo el programa
-  if((millis() - lastChangedMillis >= ChangedMillis)&&(flag)){ // para ejecutar la funcion que invia la info a la bomba
-  aqui ejecutarias la funcion de ChangePumpState, va a generar un poquito de lag con respecto al usuario pero al final en 
-  teoria deberia funcionar. mi sugerencia es que el intervalo sea mayor que 17 ms pero que igual  que sea bastante seguido
-  } 
-  */
-
   // ***** Screen State Machine *****
   arrow_state_change();
   screen_state_change();
