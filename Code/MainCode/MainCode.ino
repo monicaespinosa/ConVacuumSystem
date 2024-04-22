@@ -205,6 +205,7 @@ void loop() {
       Serial.print("ITR090 Sensor Pressure: ");
       Serial.print(PressureValue);
       Serial.println(" mbar");
+      //send_serial_data(param["OpModeBKP"].receivedValue, param["MotorPump"].receivedValue, PressureValue, param["Pressure1"].receivedValue, param["TempElec"].receivedValue, param["TempMotor"].receivedValue, param["TempPmpBot"].receivedValue, screen_state, arrow_state);
       
       turboPump.sendCommand(outCommand);
 
@@ -236,6 +237,7 @@ void loop() {
   arrow_state_change();
   screen_state_change();
   state_machine();
+  send_serial_data(param["OpModeBKP"].receivedValue, param["MotorPump"].receivedValue, PressureValue, param["Pressure1"].receivedValue, param["TempElec"].receivedValue, param["TempMotor"].receivedValue, param["TempPmpBot"].receivedValue, screen_state, arrow_state);
 
 }
 
@@ -558,4 +560,10 @@ void interruption(){
     //Serial.println("CANCEL");
     int_1_activated=true;
   }
+}
+
+void send_serial_data(char *BStatus, char *PStatus, double pressure1, char *pressure2, char *Temp1, char *Temp2, char *Temp3, int screen_state, int arrow_state){
+  //String str1=S
+  String array=String(BStatus)+"h1"+String(PStatus)+"h2"+String(pressure1)+"h3"+String(pressure2)+"h4"+String(Temp1)+"h5"+String(Temp2)+"h6"+String(Temp3)+"h7"+screen_state+"h8"+arrow_state;
+  Serial.println(array);
 }
