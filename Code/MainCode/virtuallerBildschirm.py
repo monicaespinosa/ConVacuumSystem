@@ -1,6 +1,8 @@
 import serial.tools.list_ports
 from graphics import *
 
+
+
 def main():
     screen_state=0
     arrow_state=0
@@ -19,8 +21,8 @@ def main():
         if serialInst.in_waiting:
             packet=serialInst.readline()
             received_string=packet.decode('utf').rstrip('\n')
-            print(received_string)
-            state=change_state(received_string)
+            print(read_string(received_string))
+            
         if state_aux!=screen_state:
             for i in msg: i.undraw()
             msg=state_machine(screen_state,arrow_state,win)
@@ -28,18 +30,49 @@ def main():
             if screen_state==1: aCircle.draw(win)
             else: aCircle.undraw()
             state_aux=screen_state
+        '''
         key=win.getKey()
         if (key=="c")|(key=="C"):
             screen_state=screen_state+1
             if screen_state==6: break
+        '''
 
-''' 
-def change_state(in_string):
+
+def read_string(in_string):
+    rows=9
+    cols=7
+    char_matrix=[[0 for _ in range(cols)] for _ in range(rows)]
     char_list=list(in_string)
+    row_count=0
+    col_count=0
     counter=0
     for i in char_list:
-        if char_list[counter]==" ":
-'''
+        if char_list[counter]=='h':
+            if row_count<8: row_count=row_count+1
+            col_count=0
+        else: 
+            char_matrix[row_count][col_count]=char_list[counter]
+            if col_count<6: col_count=col_count+1
+        counter=counter+1
+    
+    '''
+    NOTA PARA MI: ES UN ARRAY DE ARRAYS Y NO UNA MATRIZ
+    in_data=dict(
+        BPStatus=''.join(char_matrix[0,0])
+        TBStatus=''.join(char_matrix[1,0])
+        pressure1=''.join(char_matrix[2,:])
+        pressure2=''.join(char_matrix[3,:])
+        temElec=''.join(char_matrix[4,:])
+        tempMotor=''.join(char_matrix[5,:])
+        tempPmPBot=''.join(char_matrix[6,4:5])
+        screen_state=''.join(char_matrix[7,0])
+        arrow_state=''.join(char_matrix[8,0])
+    )
+    return in_data
+    '''
+    return char_matrix
+        
+
 
 
 def PressureScreen(TPStatus, BPStatus, pressure1, pressure2):
