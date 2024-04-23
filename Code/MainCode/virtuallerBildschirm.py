@@ -6,28 +6,43 @@ from graphics import *
 def main():
     screen_state=0
     arrow_state=0
+    
     win=GraphWin("Program",500,300)
-    aCircle=Circle(Point(300, (arrow_state+2)*20+10), 5)
-    aCircle.setFill("blue")
-    aCircle.setOutline("blue")
+    
 
-    msg=state_machine(screen_state,arrow_state,win)
+    msg=state_machine(0,0,0,0,0,0,0,0)
     for i in msg:
         i.draw(win)
 
     state_aux=screen_state
+    
 
     while True:
         if serialInst.in_waiting:
             packet=serialInst.readline()
             received_string=packet.decode('utf').rstrip('\n')
-            print(read_string(received_string))
-            
+            decoded_string=read_string(received_string)
+            print(decoded_string)
+            BPStatus=int(decoded_string['BPStatus']),
+            TPStatus=int(decoded_string['TBStatus']),
+            pressure1=decoded_string['pressure1'],
+            pressure2=decoded_string['pressure2'],
+            temElec=int(decoded_string['temElec']),
+            tempMotor=int(decoded_string['tempMotor']),
+            tempPmpBot=int(decoded_string['tempPmPBot']),
+            screen_state=int(decoded_string['screen_state'])
+            arrow_state=int(decoded_string['arrow_state'])
+        
         if state_aux!=screen_state:
+            print("enters")
             for i in msg: i.undraw()
-            msg=state_machine(screen_state,arrow_state,win)
+            msg=state_machine(screen_state, TPStatus, BPStatus, pressure1, pressure2, temElec, tempMotor, tempPmpBot)
             for i in msg: i.draw(win)
-            if screen_state==1: aCircle.draw(win)
+            if screen_state==1: 
+                aCircle=Circle(Point(300, (arrow_state+2)*20+10), 5)
+                aCircle.setFill("blue")
+                aCircle.setOutline("blue")
+                aCircle.draw(win)
             else: aCircle.undraw()
             state_aux=screen_state
         '''
@@ -41,7 +56,7 @@ def main():
 def read_string(in_string):
     rows=9
     cols=7
-    char_matrix=[[0 for _ in range(cols)] for _ in range(rows)]
+    char_matrix=[['0' for _ in range(cols)] for _ in range(rows)]
     char_list=list(in_string)
     row_count=0
     col_count=0
@@ -55,26 +70,22 @@ def read_string(in_string):
             if col_count<6: col_count=col_count+1
         counter=counter+1
     
-    '''
-    NOTA PARA MI: ES UN ARRAY DE ARRAYS Y NO UNA MATRIZ
+    print(char_matrix[2][:])
     in_data=dict(
-        BPStatus=''.join(char_matrix[0,0])
-        TBStatus=''.join(char_matrix[1,0])
-        pressure1=''.join(char_matrix[2,:])
-        pressure2=''.join(char_matrix[3,:])
-        temElec=''.join(char_matrix[4,:])
-        tempMotor=''.join(char_matrix[5,:])
-        tempPmPBot=''.join(char_matrix[6,4:5])
-        screen_state=''.join(char_matrix[7,0])
-        arrow_state=''.join(char_matrix[8,0])
+        BPStatus=char_matrix[0][0],
+        TBStatus=char_matrix[1][0],
+        pressure1=''.join(char_matrix[2][:]),
+        pressure2=''.join(char_matrix[3][:]),
+        temElec=''.join(char_matrix[4][:]),
+        tempMotor=''.join(char_matrix[5][:]),
+        tempPmPBot=''.join(char_matrix[6][4:5]),
+        screen_state=char_matrix[7][0],
+        arrow_state=char_matrix[8][0]
     )
     return in_data
-    '''
-    return char_matrix
+    
+    #return char_matrix
         
-
-
-
 def PressureScreen(TPStatus, BPStatus, pressure1, pressure2):
     msg=[]
     str="Turbo Pump Status: "
@@ -229,15 +240,15 @@ def BastaetigungScreen(PumpStatus, PumpSelection):
     msg[len(msg)-1].setTextColor(color)
     return msg
 
-def state_machine(screen_state, arrow_state, win):
+def state_machine(screen_state, TPStatus, BPStatus, pressure1, pressure2, temElec, tempMotor, tempPmpBot):
     match screen_state:
-            case 0: msg=PressureScreen(0, 0, 1000, 960)
-            case 1: msg=MenuScreen(0,0)
-            case 2: msg=TempScreen("19", "20", "21")
+            case 0: msg=PressureScreen(TPStatus, BPStatus, pressure1, pressure2)
+            case 1: msg=MenuScreen(TPStatus, BPStatus)
+            case 2: msg=TempScreen(temElec, tempMotor, tempPmpBot)
             case 3: msg=TempSettings()
-            case 4: msg=BastaetigungScreen(0, 0)
-            case 5: msg=BastaetigungScreen(0, 1)
-            case _: msg=PressureScreen(0, 0, 1000, 960)
+            case 4: msg=BastaetigungScreen(BPStatus, 0)
+            case 5: msg=BastaetigungScreen(TPStatus, 1)
+            case _: msg=PressureScreen(TPStatus, BPStatus, pressure1, pressure2)
     return msg
 
 ports=serial.tools.list_ports.comports()
@@ -263,3 +274,4 @@ serialInst.open()
 main()
 
 serialInst.close()
+print("end")
