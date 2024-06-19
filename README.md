@@ -4,9 +4,34 @@ This is a project done at EST-RUB. Here is the control and interface of a vacuum
 ## Current circuit
 The circuit (still to try) goes as following:
 
-![Shaltung_aufbau](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/82b41dbd-6f89-4a12-b220-900301cfcae9)
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/7b1d19c1-73f9-4d2d-945e-82eee775d735)
 
-The voltage of the grid (1 kV) must be increased from 0 V slowly to see the reaction of the environment to the voltage according to the pressure. The voltage of the Wehnelt cylinder is completely experimental.
+The setup still has to be simulated to find out V_c and to check the accuracy of the voltages selected for the grid and the plate.
+
+## CST Simulations of the setup
+The following setup was simulated:
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/405f0f8f-9f3f-49e9-9c0a-5f4630cc735f)
+
+Initially were the following voltages set:
+* V_S 6.4 V
+* V_C: 6.4 V
+* V_G= 400 V
+* V_P= 1000 V
+
+The result for the obtained trajectory is shown below. The obtained current was around 5 mA.
+
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/585d3c0f-d25d-47a4-b070-d8ddf82cefa9)
+
+However, the shape of the electron beams seems to change its shape in a very drastic way. Making the V_C smaller (more negative) should help concentring more the electrons to the center of the beam. A second simulation was made sweeping the voltage of the Wehnelt_Cylinider between -10 V and 6 V. 
+
+Charges on the plate:
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/0f343619-c491-4c79-ba3d-49d591911f32)
+
+Particles that come out of the coil:
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/9a4e5f58-5a77-4f0c-96a8-2432bd74582c)
+
+They are only high when the voltage at the Wehnelt Cylinider is equal or higher than that of the coil. A new simulation sweeping Vc between 6.4V and 15.4V is been made. Results:
+
 
 ## Current measurement
 The current measurement stated in the last picture should be something like this:
