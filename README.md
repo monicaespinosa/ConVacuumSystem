@@ -68,3 +68,20 @@ The TMCS1100 is a galvanically isolated Hall-effect current sensor capable of DC
 <img width="537" alt="image" src="https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/e9c50c54-f587-4aef-983e-6dd9759625b7">
 
 However the smalles current that this sensor is able to measure is 125 mA (for the TMCS1100A4). This also measures up to 12 A, which should be enough. Ordering number: TMCS1100A4QDR.
+
+### 2. INA333-Q1 (By Texas Instruments)
+The INA333-Q1 is a low-power, precision instrumentation amplifier, planned to be used as follows:
+
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/99451df2-63c0-4bd9-bc2b-bc0e11a4809a)
+
+
+The inside schematic of the INA333-Q1:
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/315523b2-8e44-4ad4-ba65-47afb34f9fd2)
+
+Some specifications:
+
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/2ab0eaf7-e3f6-4b9a-9a2c-f7bf84dbed0c)
+
+A LTSpice simulation was done to verify the gain of the device. However the results were not exactly what is expected. Additionals simulations should be done. The file is though attached in this repository as "Draft2.asc".
+
+
