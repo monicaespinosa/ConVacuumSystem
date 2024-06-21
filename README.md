@@ -24,7 +24,7 @@ The result for the obtained trajectory is shown below. The obtained current was 
 
 However, the shape of the electron beams seems to change its shape in a very drastic way. Making the V_C smaller (more negative) should help concentring more the electrons to the center of the beam. A second simulation was made sweeping the voltage of the Wehnelt_Cylinider between -10 V and 6 V. 
 
-Charges on the plate:
+As a result, the following charges on the plate were obtained:
 ![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/0f343619-c491-4c79-ba3d-49d591911f32)
 
 Particles that come out of the coil:
@@ -34,13 +34,22 @@ They are only high when the voltage at the Wehnelt Cylinider is equal or higher 
 
 ![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/b6012328-200f-4f13-b67d-3d578c54f5ee)
 
+Evidently, the current (and as a consequence the particles getting to the plate) exists only when V_C>=V_S. The trajectories of the particles change however as they seem to be pushed into the cylinder (because of the higher voltage):
+
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/3ac7468e-0a58-4944-a271-e15e163a092a)
+
+A final simulation setting the voltage on the grid V_G=800 V, putting a porcelain cylinder around the components (to simulate the glass cylinider) and moving the cylinider along the z-axis was made. The obtained trajectories are:
+
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/9e56299d-0ae6-4a87-bfa8-3b75c5c7e106)
+
+
 
 
 ## Current measurement
 The current measurement stated in the last picture should be something like this:
 ![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/2cd917ea-59be-4fdb-9466-b059a0c22ddf)
 
-The current flowing through R_mess is theorically expected to be in the microampere (µA) to milliampere (mA) range. Supposing that the current is 10mA, the following circuit was simulated to choose the value of R_mess:
+The current flowing through R_mess is theorically expected to be around 5mA according to the simulations. Supposing that the current is 10mA, the following circuit was simulated to choose the value of R_mess:
 
 <img width="325" alt="image" src="https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/c4272afb-3ed3-4a7b-beaf-601a9c627d06">
 
