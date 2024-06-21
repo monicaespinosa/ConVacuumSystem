@@ -32,6 +32,9 @@ Particles that come out of the coil:
 
 They are only high when the voltage at the Wehnelt Cylinider is equal or higher than that of the coil. A new simulation sweeping Vc between 6.4V and 15.4V is been made. Results:
 
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/b6012328-200f-4f13-b67d-3d578c54f5ee)
+
+
 
 ## Current measurement
 The current measurement stated in the last picture should be something like this:
