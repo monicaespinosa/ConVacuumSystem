@@ -38,9 +38,22 @@ Evidently, the current (and as a consequence the particles getting to the plate)
 
 ![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/3ac7468e-0a58-4944-a271-e15e163a092a)
 
-A final simulation setting the voltage on the grid V_G=800 V, putting a porcelain cylinder around the components (to simulate the glass cylinider) and moving the cylinider along the z-axis was made. The obtained trajectories are:
+A new simulation setting the voltage on the grid V_G=800 V, putting a porcelain cylinder around the components (to simulate the glass cylinider) and moving the cylinider along the z-axis was made. The obtained trajectories are:
 
 ![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/9e56299d-0ae6-4a87-bfa8-3b75c5c7e106)
+
+### Setting the voltage on the plate nearly to 0
+Simulation with V_G = 1000 V and V_P = 4 V, and moving the cylinder to its initial position.
+
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/793896a4-7309-4a5e-bfd4-4e4e9c879427)
+
+Simulation with the same parameters but moving the cylinder so its positioned closer to the plate.
+
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/8421cdd1-d5c9-4222-9ab9-39f22e9a9367)
+
+Final simulation moving the cylinder back again and setting its voltage to -V_S.
+
+![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/66730606-2f4f-4ead-8a13-c946194bcbe8)
 
 
 
