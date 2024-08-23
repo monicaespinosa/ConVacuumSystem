@@ -56,6 +56,57 @@ Final simulation moving the cylinder back again and setting its voltage to -V_S.
 ![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/66730606-2f4f-4ead-8a13-c946194bcbe8)
 
 
+### Changing the cathode
+For all the following simulations the following voltages are set: V_S=6.4V, V_C=-30V V_G = 1000V and V_P = 4V.
+
+#### Vertical filled PEC cylinder
+Cathode:
+![image](https://github.com/user-attachments/assets/e61b0fd6-4c1f-4cc4-9087-67172321c731)
+
+
+Trajectories:
+![image](https://github.com/user-attachments/assets/9c09d741-97e4-4676-9c34-4f3a57b2470d)
+
+Total current leaving the cathode: 1.191e-03 mA
+
+### Vertical hollow PEC cylinder
+The cathode looks like the one before but is hollow with a thickness of 0.3 mm.
+
+Trajectories:
+![image](https://github.com/user-attachments/assets/270f2000-f85e-44ef-9f3f-197fb305d620)
+
+Total current leaving the cathode: 9.14e-02 mA
+
+### Toroid
+Model:
+![image](https://github.com/user-attachments/assets/f4135615-c0ba-41a9-936d-de7f47c87b61)
+
+
+Trajectories:
+![image](https://github.com/user-attachments/assets/9688a467-bd68-4305-8b6f-8bfdfb9ad18a)
+
+
+Total current leaving the cathode: 0.98 mA
+
+### Rectangular cathode:
+Model:
+![image](https://github.com/user-attachments/assets/23e1c267-47ab-49bb-8cb7-2b3cd2cd397a)
+
+Trajectories: 
+![image](https://github.com/user-attachments/assets/a28f8327-6b3a-445f-8212-ae7b98d6d767)
+
+
+Total current leaving the cathode: 0.78 mA
+
+### Sphere
+Model:
+![image](https://github.com/user-attachments/assets/7cd68f25-79ad-4122-af77-de3036f23be3)
+
+Trajectories:
+![image](https://github.com/user-attachments/assets/14dc5615-78e2-4bb4-8abf-378560cff7c1)
+
+Total current leaving their cathode: 1.19 mA
+
 
 
 ## Current measurement
