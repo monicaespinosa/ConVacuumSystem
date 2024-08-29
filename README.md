@@ -134,15 +134,30 @@ Total current leaving the cathode: 0.71 mA
 
 
 
-### Cone
-Model:
+### Electron-gun Cathode
+Model: 
+
+![image](https://github.com/user-attachments/assets/387a45cd-ee46-4143-996c-e5277fd2d165)
+
+It's a "cone" whose two planar circular faces are connected not by a rotated linear surface but a rotated exponential surface so it's internal radious get's thicker in an exponential way along the w axis as w decreases, simulating a pointy trunked cone. It was initially made small but only few particles were accelerated. Increasing its size and getting it closer to the grid produces the following trajectories:
+
+![image](https://github.com/user-attachments/assets/b7cdce4d-d196-4516-bc6c-9664a834d68a)
+
+The total current leaving the cathode was 9.35 mA. However the trajectories are messy and very disperse. After trying to move both the cathode and the grid further from the plate, because of the Wehnelt-Cylinder, the particles collide and then get dispersed again, without reaching the plate:
+
+![image](https://github.com/user-attachments/assets/e6b2280f-2e24-4ba2-a903-8bd35732bebd)
+
+
+### Toroid-Coil
+
+Moldel:
+
 
 
 Trajectories:
 
 
 Total current leaving the cathode:  mA
-
 
 
 ## Current measurement
