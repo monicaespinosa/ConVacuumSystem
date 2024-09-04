@@ -152,12 +152,12 @@ The total current leaving the cathode was 9.35 mA. However the trajectories are 
 
 Moldel:
 
+![image](https://github.com/user-attachments/assets/4dc83fb6-3ac4-4320-a37f-b22c323c6896)
 
+This toroid model was created using one of the predesigned macros of CST. However, each ring is made of small faces (in total 10000 for the whole coil), which made necessary to create a macro to select all faces in order to create a particle source out of the whole coil. The simulation results after making that are however dissapointing, the particles don't seem to be leaving the coil.
 
-Trajectories:
+![image](https://github.com/user-attachments/assets/7731663e-2d4a-4e85-9636-51586dacb107)
 
-
-Total current leaving the cathode:  mA
 
 
 ## Current measurement
