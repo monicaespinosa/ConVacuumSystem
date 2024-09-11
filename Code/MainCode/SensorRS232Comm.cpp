@@ -17,6 +17,11 @@ unsigned long lastReceivedRS232Millis = 0; // Time in milliseconds of the last m
 // Constructor for the ITR090 class
 ITR090::ITR090(HardwareSerial &port) : serialPort(port) {
   init(); // Initialize serial communication
+  int chain_size=5;
+  byte unit_command[chain_size]={3,16,62,0,78}; // Sets mbar as unit
+  for(int i=0; i<chain_size; i++){
+    serialPort.write(unit_command[i]);
+  }
 }
 
 // Initialize serial communication
