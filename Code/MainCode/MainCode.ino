@@ -281,7 +281,7 @@ void changePumpState(int pumpNumber){ // 0 for BP, 1 for MP
 // ______________________ Screen functions __________________________
 
 //This will be the main screen of the GUI
-void PressureScreen(char *Status, double pressure1, char *pressure2){ 
+void PressureScreen(char *Status, double pressure1, char *pressure2){   
   lcd.cls();
   lcd.locate(0,0);
   lcd.print("Pressure");
