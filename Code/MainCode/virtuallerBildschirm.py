@@ -14,7 +14,7 @@ def main():
     graph=plt.plot(time_array, pressure_array)[0]
     plt.xlabel('Time (s)')
     plt.ylabel('Pressure (mbar)')
-    plt.title('ITR 090 Sensor Pressure read')
+    plt.title('RPT 010 Sensor Pressure read')
     ####
 
     screen_state=0
@@ -52,7 +52,7 @@ def main():
             print(decoded_string)
             if (decoded_string['BPStatus']=='0')|(decoded_string['BPStatus']=='1'):
                 printed_dict=decoded_string
-                if float(decoded_string['pressure1'])!=0: pressure_array.append(float(decoded_string['pressure1']))
+                if float(decoded_string['pressure1'])!=0: pressure_array.append(float(decoded_string['pressure2']))
                 else: pressure_array.append(pressure_array[-1])
                 time_array.append(time.time()-start_time)
                 graph.remove()
@@ -62,7 +62,7 @@ def main():
             print("enters")
             for i in msg: i.undraw()
             msg=state_machine(int(printed_dict['screen_state']), 
-                              int(printed_dict['TPStatus']), 
+                              printed_dict['TPStatus'], 
                               printed_dict['BPStatus'], 
                               printed_dict['pressure1'], 
                               printed_dict['pressure2'], 
@@ -97,7 +97,6 @@ def read_string(in_string):
             if col_count<6: col_count=col_count+1
         counter=counter+1
     
-    print(char_matrix[2][:])
     in_data=dict(
         BPStatus=char_matrix[0][0],
         TPStatus=char_matrix[1][0],
@@ -118,7 +117,7 @@ def PressureScreen(TPStatus, BPStatus, pressure1, pressure2):
     msg.append(Text(Point(text_cursor,50), str))
     text_cursor=text_cursor+len(str)*4.8
     
-    if TPStatus==0:
+    if TPStatus=='0':
         str="OFF"
         color="red"
     else:
@@ -130,8 +129,9 @@ def PressureScreen(TPStatus, BPStatus, pressure1, pressure2):
     text_cursor=(len(str)/2)+70
     msg.append(Text(Point(text_cursor,70), str))
     text_cursor=text_cursor+len(str)*4.8
-    if BPStatus==1:
+    if BPStatus=='1':
         str="ON"
+        color='green'
     else:
         str="OFF"
         color="red"
@@ -172,7 +172,7 @@ def MenuScreen(TPStatus, BPStatus):
     msg.append(Text(Point(text_cursor,50), str))
     text_cursor=text_cursor+len(str)*4.8
     
-    if TPStatus==0:
+    if TPStatus=='0':
         str="ON"
         color="green"
     else:
@@ -184,8 +184,9 @@ def MenuScreen(TPStatus, BPStatus):
     text_cursor=(len(str)/2)+73
     msg.append(Text(Point(text_cursor,70), str))
     text_cursor=text_cursor+len(str)*4.8
-    if BPStatus==1:
+    if BPStatus=='1':
         str="OFF"
+        color="red"
     else:
         str="ON"
         color="green"
@@ -252,7 +253,7 @@ def BastaetigungScreen(PumpStatus, PumpSelection):
     msg.append(Text(Point(text_cursor,110), str))
     text_cursor=text_cursor+pow((len(str)),1.77)
     
-    if PumpStatus==0:
+    if PumpStatus=='0':
         str="ON?"
         color="green"
     else:
