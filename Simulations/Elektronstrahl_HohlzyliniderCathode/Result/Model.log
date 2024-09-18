@@ -1,0 +1,183 @@
+23/Aug/2024 16:53:39  ================================================================================
+                      Particle Tracking Solver run
+                      ================================================================================
+
+23/Aug/2024 16:53:39  *** Warning ***
+                      
+                      The mesh at particle source "Cathode" has less than 3 meshlines in one
+                      direction. This might lead to an inaccurate emission process.
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:53:39  Settings from problem type "Low Frequency" are used for material "Aluminum".
+                      This might lead to unwanted results. Consider to add additional settings for
+                      problem type "Particle" or delete the "Low Frequency" settings.
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:53:39  *** Warning ***
+                      
+                      This software is licensed for educational purposes only.
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:53:40  Solver started at: 04:53 PM Friday, 23. August 2024 (Mitteleuropäische Sommerzeit)
+                      
+                        Module:  Particle Tracking Solver (Win 64)
+                        Version: 2023.0 Release from 2022-09-12 (change 1015769)
+                      Hardware:
+                          Computer name: EST-03-233-03
+                      
+                      Units settings:
+                         Dimensions: mm
+                         Frequency:  GHz
+                         Time:       ns
+23/Aug/2024 16:53:40  Number of CPU threads that can be used: 4
+                      
+23/Aug/2024 16:53:40  Initializing
+23/Aug/2024 16:53:40  Using HEX mesh
+                      
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:53:40  Initial timestep:     0.000132055 ns
+                      Min. Pushes per cell: 5
+                      Smallest mesh step:   0.197946 mm
+                      Largest  mesh step:   2.18657 mm
+                      Charact. mesh step:   0.197946 mm
+23/Aug/2024 16:53:40  
+                      Adaptive trajectory resampling is active for particle emitter 'Cathode' with momentum angle sampling threshold of 0.5°.
+                      
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:53:40  
+                      Pure tracking mode
+23/Aug/2024 16:53:40    Max. number of timesteps: 10000
+23/Aug/2024 16:53:40    Monitor charge/current:   Yes
+23/Aug/2024 16:53:40  Running field solver
+23/Aug/2024 16:53:40  Solver started at: 04:53 PM Friday, 23. August 2024 (Mitteleuropäische Sommerzeit)
+                      
+                        Module:  Electrostatic Solver (Win 64)
+                        Version: 2023.0 Release from 2022-09-12 (change 1015769)
+                      
+                        Hardware:
+                           Computer name: EST-03-233-03
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:54:12  *** Warning ***
+                      
+23/Aug/2024 16:54:12  1333 mesh cells are represented in staircase mode and have been filled with PEC.
+                      3101 mesh faces are represented in staircase mode and have been filled with PEC.
+                      531 mesh edges are represented in staircase mode and have been filled with PEC.
+                       More...
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:54:13  Mesh statistics:
+                      
+                         Hexahedral mesh type: Perfect Boundary Approximation (PBA)
+                            Version: legacy
+                      
+                         Parallelization type: domain decomposition
+                            Number of parallel working threads: 6
+                            Number of calculation domains used: 16
+                      
+                         Acceleration mode: CPU
+                         PBA fill limit: 85.00% (inverse)
+23/Aug/2024 16:53:56     current system memory usage reached 70%
+23/Aug/2024 16:53:55     current system memory usage reached 70%
+23/Aug/2024 16:53:48     current system memory usage reached 70%
+23/Aug/2024 16:53:49     current system memory usage reached 70%
+
+23/Aug/2024 16:54:15  Electrostatic Solver Results:
+                      
+                        Accuracy:                     8.178121e-07
+                        Desired accuracy:             1.000000e-06
+                        Number of iterations:         63
+                        Maximum number of iterations: 489720
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:54:15  Electrostatic Solver Statistics:
+                      
+                         Number of threads used:           	4      
+                      
+                         Number of meshcells:              	470820 
+                      
+                      Solver Timing Statistics : 
+                      
+                        Mesh generation:         0d :  0h :  0m : 33s
+                        Solver time:             0d :  0h :  0m :  1s
+                        Post-processing:         0d :  0h :  0m :  1s
+                                             	--------------------------
+                        Total time:              0d :  0h :  0m : 35s
+                        ----------------------------------------------------------------------------
+                                            Peak memory used (kB)         Free physical memory (kB) 
+                                                                          At begin     Minimum      
+                        ----------------------------------------------------------------------------
+                        Matrices calc.      446940                        5795898      5272460      
+                        Solver run total    92188                         5826676      5327880      
+                        ----------------------------------------------------------------------------
+                      
+                      
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:54:15  
+23/Aug/2024 16:54:15  Considered field-monitors:
+                                    E-static, Factor: 1.00e+00, Frequency: 0.00e+00Hz, Phase: 0.00e+00deg
+                          E-Static Potential, Factor: 1.00e+00, Frequency: 0.00e+00Hz, Phase: 0.00e+00deg
+                      Evaluating particle sources
+23/Aug/2024 16:54:16  
+                      Particle source Cathode
+23/Aug/2024 16:54:16    Initial number of particles: 7990
+23/Aug/2024 16:54:16    Virtual gap distance:        0.329253 mm
+23/Aug/2024 16:54:16    Choosing between Thermionic and SCL Emission...
+23/Aug/2024 16:54:16  *** Warning ***
+                      
+23/Aug/2024 16:54:16  Since the electric field close to the particle source is too strong, some particles of source Cathode can not be 
+                      emitted. Try to increase the SCL reference potential.
+                      
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:54:16    Decided for Space-charge Limited Emission.
+23/Aug/2024 16:54:16  *** Warning ***
+                      
+23/Aug/2024 16:54:16  Particle source Cathode: 7255 particles could not be emitted due to suppression by the emission model.
+                      
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:54:16  Running time loop...
+23/Aug/2024 16:54:18  *** Warning ***
+                      
+23/Aug/2024 16:54:18  A number of 105 particle trajectories did not terminate (due to collisions or leaving the simulation region) within the 
+                      maximal calculation time.
+                      Try increasing the simulation time.
+                      
+                      
+                      ------------------------------------------------------------------------------
+23/Aug/2024 16:54:18  Time loop finished.
+23/Aug/2024 16:54:18  
+                      Tracking solver finished
+23/Aug/2024 16:54:18    Total number of timesteps: 10000
+23/Aug/2024 16:54:18  Statistics for particle source Cathode:
+                        Initial particle number:                735
+                        Particles collided:                     630
+                        Particles passed away:                    0
+                        Particles blocked in emission:            0
+                        Particles emitted into solid:             0
+                        Particles dying in emission model:     7255
+                        Secondary particles created:              0
+                        Ionization particles created:             0
+                        Final particle number:                  105
+                        Initial timestep                   0.000132055 ns
+                        Final timestep                     0.0021428 ns
+                        Final simulation time              29.5855 ns
+                      
+23/Aug/2024 16:54:18      0. Iter.: Current = -0.000182 A, Charge = -5.38e-12 C, Perveance =  1.12e-05 A/V^(3/2)
+23/Aug/2024 16:54:18  Particle Tracking Solver successful.
+                      ================================================================================
+                      Final statistics including all solvers
+                      ================================================================================
+                      
+                      Number of mesh cells:                   470820    
+                      Number of collision triangles:          10092     
+                      
+                      Solver setup time:                      0         s  
+                      Solver loop time:                       38        s  
+                      Solver post processing time:            0         s  
+                      
+                      Total calculation time:                 0h : 0m : 38s

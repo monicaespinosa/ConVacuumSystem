@@ -1,0 +1,18 @@
+=========================================
+== CST Matrix Calculation Priority Log ==
+=========================================
+Priorities are sorted in ascending order beginning with the lowest priority
+ 
+Group | Shape-ID | ShapeName | Material | User-priority | 2D/3D-Geometry | Material-attributes | Shape-attributes | Feature-ID | Schemetype
+1 | 6 | </cst/Boundaries/> Low^X | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 7 | </cst/Boundaries/> Low^Y | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 8 | </cst/Boundaries/> Low^Z | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 9 | </cst/Boundaries/> Up^X | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 10 | </cst/Boundaries/> Up^Y | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+1 | 11 | </cst/Boundaries/> Up^Z | $NFSMaterial$ | n/a | no | normal.vacuum. | boundary. | n/a | FIT_TD
+2 | 2 | default:Glass | Porcelain | n/a | yes | kappa-eps.normal.rho. | solid. | 1114116 | FIT_TD
+3 | 3 | default:WehneltCylinder | Aluminum | n/a | yes | pec.rho. | solid. | 1114114 | FIT_TD
+3 | 4 | default:import_2 | Aluminum | n/a | yes | pec.rho. | solid. | 1114114 | FIT_TD
+3 | 5 | default:import_3 | Aluminum | n/a | yes | pec.rho. | solid. | 1114114 | FIT_TD
+4 | 1 | default:Cathode | PEC | n/a | yes | pec. | solid. | 1114115 | FIT_TD
+=========================================
