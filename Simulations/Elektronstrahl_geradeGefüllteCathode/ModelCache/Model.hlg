@@ -1,0 +1,4 @@
+The shape consists of planar faces and linear edges only.
+All faces and edges have been rebuilt by planar facets.
+
+The resulting shape is 100% valid.

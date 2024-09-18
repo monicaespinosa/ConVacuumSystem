@@ -1,0 +1,1663 @@
+20100312
+[start]hidden_objects
+[end]hidden_objects
+[start]draw_workplane
+true
+[end]draw_workplane
+[start]draw_bounding_box
+true
+[end]draw_bounding_box
+[start]draw_wireframe
+false
+[end]draw_wireframe
+[start]draw_port_wireframe
+false
+[end]draw_port_wireframe
+[start]navigation_tree_text_files
+[end]navigation_tree_text_files
+[start]history_fast_undo
+[start]undo_item
+[start]block_index
+5
+[end]block_index
+[start]command
+'@ activate global coordinates
+[end]command
+[start]content
+WCS.ActivateWCS "global"
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+6
+[end]block_index
+[start]command
+'@ activate local coordinates
+[end]command
+[start]content
+WCS.ActivateWCS "local"
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+7
+[end]block_index
+[start]command
+'@ activate global coordinates
+[end]command
+[start]content
+WCS.ActivateWCS "global"
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+8
+[end]block_index
+[start]command
+'@ activate local coordinates
+[end]command
+[start]content
+WCS.ActivateWCS "local"
+[end]content
+[start]recover_picks
+0
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+10
+[end]block_index
+[start]command
+'@ transform: rotate default:import_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:import_1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "-1*90", "-1*0", "-1*0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Rotate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+11
+[end]block_index
+[start]command
+'@ transform: translate default:import_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:import_1" 
+     .Vector "(-1)*0", "(-1)*6.8", "(-1)*40" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+12
+[end]block_index
+[start]command
+'@ transform: translate default:import_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:import_1" 
+     .Vector "(-1)*-42.4", "(-1)*6", "(-1)*0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+14
+[end]block_index
+[start]command
+'@ transform: translate default:import_3
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:import_3" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*20.4" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+20
+[end]block_index
+[start]command
+[end]command
+[start]content
+Solid.Delete "default:WehneltCylinder"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+21
+[end]block_index
+[start]command
+'@ transform: translate default:import_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:import_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*50" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+22
+[end]block_index
+[start]command
+'@ transform: translate default:import_3
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:import_3" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*16" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+23
+[end]block_index
+[start]command
+'@ transform: translate default:import_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:import_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-20" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+24
+[end]block_index
+[start]command
+'@ transform: translate default:WehneltCylinder
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:WehneltCylinder" 
+     .Vector "(-1)*70", "(-1)*0", "(-1)*35" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+41
+[end]block_index
+[start]command
+[end]command
+[start]content
+Solid.Delete "default:Spule"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+43
+[end]block_index
+[start]command
+'@ transform: translate default:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:Spule_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*d_coil" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+47
+[end]block_index
+[start]command
+'@ transform: translate component1:Spule
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*2*d_coil" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+48
+[end]block_index
+[start]command
+'@ transform: translate component1:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*2*d_coil" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+50
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*4*d_coil" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+51
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*4*d_coil" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+52
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule_1_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_1_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*4*d_coil" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+53
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule_2
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_2" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*4*d_coil" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+54
+[end]block_index
+[start]command
+'@ transform: mirror component1:Spule
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .PlaneNormal "-1*0", "-1*0", "-1*4*d_coil" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Mirror" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+55
+[end]block_index
+[start]command
+'@ transform: mirror component1:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule_1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .PlaneNormal "-1*0", "-1*0", "-1*4*d_coil" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Mirror" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+56
+[end]block_index
+[start]command
+'@ transform: mirror component2:Spule
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .PlaneNormal "-1*0", "-1*0", "-1*4*d_coil" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Mirror" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+57
+[end]block_index
+[start]command
+'@ transform: mirror component2:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .PlaneNormal "-1*0", "-1*0", "-1*4*d_coil" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Mirror" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+58
+[end]block_index
+[start]command
+'@ transform: mirror component2:Spule_1_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_1_1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .PlaneNormal "-1*0", "-1*0", "-1*4*d_coil" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Mirror" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+59
+[end]block_index
+[start]command
+'@ transform: mirror component2:Spule_2
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_2" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .PlaneNormal "-1*0", "-1*0", "-1*4*d_coil" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Mirror" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+60
+[end]block_index
+[start]command
+'@ transform: mirror default:Spule
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:Spule" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .PlaneNormal "-1*0", "-1*0", "-1*4*d_coil" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "True" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Mirror" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+61
+[end]block_index
+[start]command
+'@ transform: mirror default:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:Spule_1" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .PlaneNormal "-1*0", "-1*0", "-1*4*d_coil" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Mirror" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+62
+[end]block_index
+[start]command
+[end]command
+[start]content
+Solid.Delete "component2:solid1"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+63
+[end]block_index
+[start]command
+'@ transform: translate component1:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-0.05" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+64
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule_2
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_2" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*0.1" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+65
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule_1_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_1_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*0.05" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+66
+[end]block_index
+[start]command
+'@ transform: translate component1:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-0.05" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+67
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule_2
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_2" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-0.1" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+68
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule_1_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_1_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-0.15" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+69
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-0.2" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+70
+[end]block_index
+[start]command
+'@ transform: translate component2:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component2:Spule_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-0.3" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+136
+[end]block_index
+[start]command
+'@ transform: translate component1:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-4.8" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+139
+[end]block_index
+[start]command
+'@ transform: translate component1:Spule_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-9.6" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+141
+[end]block_index
+[start]command
+'@ transform: translate component1:Spule_1_1
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule_1_1" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-6" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+146
+[end]block_index
+[start]command
+'@ transform: translate component1:Spule
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule" 
+     .Vector "(-1)*-59", "(-1)*0", "(-1)*114" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+147
+[end]block_index
+[start]command
+'@ transform: rotate component1:Spule
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule" 
+     .Origin "Free" 
+     .Center "0", "0", "-14" 
+     .Angle "-1*90", "-1*0", "-1*0" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Rotate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+148
+[end]block_index
+[start]command
+'@ transform: translate component1:Spule
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "component1:Spule" 
+     .Vector "(-1)*-1", "(-1)*115", "(-1)*84" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+158
+[end]block_index
+[start]command
+'@ transform: translate default:WehneltCylinder
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:WehneltCylinder" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-12" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+160
+[end]block_index
+[start]command
+[end]command
+[start]content
+Solid.Delete "default:Glass"
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+163
+[end]block_index
+[start]command
+'@ transform: translate default:Glass
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:Glass" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-6" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+171
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+174
+[end]block_index
+[start]command
+'@ transform: translate default:WehneltCylinder
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:WehneltCylinder" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*14" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+175
+[end]block_index
+[start]command
+'@ transform: translate default:WehneltCylinder
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:WehneltCylinder" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-14" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+176
+[end]block_index
+[start]command
+'@ transform: translate default:WehneltCylinder
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:WehneltCylinder" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*14" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+182
+[end]block_index
+[start]command
+'@ transform: translate default:WehneltCylinder
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:WehneltCylinder" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*-28" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+184
+[end]block_index
+[start]command
+'@ transform: translate default:WehneltCylinder
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:WehneltCylinder" 
+     .Vector "(-1)*0", "(-1)*0", "(-1)*28" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+187
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+189
+[end]block_index
+[start]command
+[end]command
+[start]content
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+190
+[end]block_index
+[start]command
+[end]command
+[start]content
+
+Solid.Delete "default:solid1"
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+1
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+194
+[end]block_index
+[start]command
+
+'@ transform: translate default:Cathode
+
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:Cathode" 
+     .Vector "(-1)*-2", "(-1)*-0.5", "(-1)*0" 
+     .UsePickedPoints "False" 
+     .InvertPickedPoints "False" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Translate" 
+End With 
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[start]undo_item
+[start]block_index
+200
+[end]block_index
+[start]command
+
+'@ transform: rotate default:Cathode
+
+[end]command
+[start]content
+With Transform 
+     .Reset 
+     .Name "default:Cathode" 
+     .Origin "Free" 
+     .Center "0", "0", "0" 
+     .Angle "-1*0", "-1*0", "-1*270" 
+     .MultipleObjects "False" 
+     .GroupObjects "False" 
+     .Repetitions "1" 
+     .MultipleSelection "False" 
+     .AutoDestination "True" 
+     .Transform "Shape", "Rotate" 
+End With 
+
+[end]content
+[start]recover_picks
+1
+[end]recover_picks
+[start]delete_solids
+0
+[end]delete_solids
+[end]undo_item
+[end]history_fast_undo
+[start]unique_ids
+[start]28
+'[UNIQUE_ID]potential$Folder1:Spule|de7b4f99-b2a1-44f1-8586-36c2cf3dd69a[/UNIQUE_ID]
+
+[end]28
+[start]29
+'[UNIQUE_ID]potential$Folder1:Wehnelt|ad2d949c-161b-40c3-9f58-ba275391a208[/UNIQUE_ID]
+
+[end]29
+[start]30
+'[UNIQUE_ID]potential$Folder1:Grid|18e828f8-e0de-4412-84e9-b8214fdb861a[/UNIQUE_ID]
+
+[end]30
+[start]31
+'[UNIQUE_ID]potential$Folder1:Plate|e7ff4f4a-108e-4d35-ae61-7ed68ef84961[/UNIQUE_ID]
+
+[end]31
+[start]149
+'[UNIQUE_ID]potential$Coil|0e55bb6f-c76c-45fe-8243-15d1462613f1[/UNIQUE_ID]
+
+[end]149
+[start]178
+'[UNIQUE_ID]potential$potential1|9ef25d61-959b-4ca9-bb83-4fb729ee3c09[/UNIQUE_ID]
+
+[end]178
+[start]179
+'[UNIQUE_ID]potential$Platte|f9c75f41-164f-4377-a70e-71649c2885f3[/UNIQUE_ID]
+
+[end]179
+[start]181
+'[UNIQUE_ID]potential$Folder1:Wehnelt|a25b0bb1-d12d-4a96-86a6-2640de6e0334[/UNIQUE_ID]
+
+[end]181
+[start]196
+'[UNIQUE_ID]potential$Cath|2bf7c7b8-85c1-4bab-8f31-f9f668117de8[/UNIQUE_ID]
+
+[end]196
+[end]unique_ids
+[start]PortAndLumpedLabelState
+[start]ShowLabels
+1
+[end]ShowLabels
+[start]ShowLabelsShort
+1
+[end]ShowLabelsShort
+[start]ZoomDependPortLabels
+1
+[end]ZoomDependPortLabels
+[end]PortAndLumpedLabelState
+[start]adaption_criteria_store
+[end]adaption_criteria_store
+[start]diagnostic_info
+[start]import_item
+[start]file
+1.cby
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[start]import_item
+[start]file
+2.cby
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[start]import_item
+[start]file
+3.cby
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[start]import_item
+[start]file
+4.cby
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[start]import_item
+[start]file
+5.cby
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[start]import_item
+[start]file
+6.cby
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[start]import_item
+[start]file
+7.cby
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[start]import_item
+[start]file
+8.cby
+[end]file
+[start]invalid_names
+[end]invalid_names
+[end]import_item
+[end]diagnostic_info
