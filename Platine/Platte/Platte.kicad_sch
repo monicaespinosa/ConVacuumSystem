@@ -1946,6 +1946,18 @@
 		)
 	)
 	(junction
+		(at 33.02 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e4942db-39e1-4910-9c6b-b0227a2411bb")
+	)
+	(junction
+		(at 40.64 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83538f8b-ccd6-4eea-ae80-d288336c4910")
+	)
+	(junction
 		(at 91.44 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2075,6 +2087,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 63.5) (xy 40.64 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "366ef619-1109-4dc6-9517-26b9a4c916d7")
+	)
+	(wire
+		(pts
 			(xy 36.83 121.92) (xy 36.83 125.73)
 		)
 		(stroke
@@ -2115,7 +2137,17 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 68.58) (xy 40.64 69.85)
+			(xy 87.63 45.72) (xy 99.06 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4885dd52-2688-4b5e-8dc1-ad1d19ad2261")
+	)
+	(wire
+		(pts
+			(xy 40.64 63.5) (xy 40.64 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2395,6 +2427,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 63.5) (xy 44.45 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aab57bb4-e4d5-4eb9-826e-b803df211a8a")
+	)
+	(wire
+		(pts
 			(xy 99.06 49.53) (xy 92.71 49.53)
 		)
 		(stroke
@@ -2485,6 +2527,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 63.5) (xy 33.02 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0f30776-c88d-4566-bc92-46e32ecc16c6")
+	)
+	(wire
+		(pts
 			(xy 118.11 38.1) (xy 124.46 38.1)
 		)
 		(stroke
@@ -2495,7 +2547,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 63.5) (xy 25.4 63.5)
+			(xy 25.4 63.5) (xy 33.02 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2512,6 +2564,26 @@
 			(type default)
 		)
 		(uuid "dae384ac-d2f5-4a52-9583-656b0a70b138")
+	)
+	(wire
+		(pts
+			(xy 203.2 45.72) (xy 214.63 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df3db5c2-8931-49b2-9e4e-95d5f21fff0c")
+	)
+	(wire
+		(pts
+			(xy 143.51 45.72) (xy 154.94 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df551faa-e552-4d63-97a0-b3a0b45e3806")
 	)
 	(wire
 		(pts
@@ -2582,16 +2654,6 @@
 			(type default)
 		)
 		(uuid "f504a5fb-efed-4569-9436-366633caf2f1")
-	)
-	(wire
-		(pts
-			(xy 33.02 66.04) (xy 33.02 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f509f3df-0c33-4c1a-acc1-65573d498c30")
 	)
 	(wire
 		(pts
@@ -2780,17 +2842,6 @@
 		)
 		(uuid "204869a3-c7c6-4e7d-9e35-712877b9bc3d")
 	)
-	(label "analog_inp_low1"
-		(at 26.67 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "368e7baf-1d9d-4c5c-b8bf-1469a99381e0")
-	)
 	(label "out_clock"
 		(at 35.56 116.84 0)
 		(fields_autoplaced yes)
@@ -2813,17 +2864,6 @@
 		)
 		(uuid "45151865-f51c-4047-904b-6fac16478e3e")
 	)
-	(label "analog_inp_low2"
-		(at 33.02 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4b0eb41e-e876-4e4b-8c31-e0f51626728a")
-	)
 	(label "amp_data3"
 		(at 35.56 109.22 0)
 		(fields_autoplaced yes)
@@ -2845,17 +2885,6 @@
 			(justify right bottom)
 		)
 		(uuid "6a121c35-316e-4436-9e6d-0039865a41a6")
-	)
-	(label "analog_inp_low3"
-		(at 40.64 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6ba069c5-2010-4033-a598-d52f2a4cb258")
 	)
 	(label "amp_data2"
 		(at 175.26 45.72 0)
@@ -2890,17 +2919,6 @@
 		)
 		(uuid "753bf358-6b1a-4a1e-8e14-96fb0d8af596")
 	)
-	(label "analog_inp_low1"
-		(at 99.06 45.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8b2fc2d9-8154-41e3-9ff4-dc950842226e")
-	)
 	(label "amp_data3"
 		(at 234.95 45.72 0)
 		(fields_autoplaced yes)
@@ -2923,17 +2941,6 @@
 		)
 		(uuid "ce4436d4-e453-4071-ae3f-360ad3304bc2")
 	)
-	(label "analog_inp_low3"
-		(at 214.63 45.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d1840e0e-64bf-40b3-9c7a-183222bdaaa5")
-	)
 	(label "amp_data2"
 		(at 35.56 111.76 0)
 		(fields_autoplaced yes)
@@ -2944,17 +2951,6 @@
 			(justify left bottom)
 		)
 		(uuid "d52a526c-ce90-41a2-8d9e-95ca013e1dd2")
-	)
-	(label "analog_inp_low2"
-		(at 154.94 45.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e727a83a-1c4d-49af-befe-0e116ca794fb")
 	)
 	(label "amp_data1"
 		(at 119.38 45.72 0)
@@ -3061,7 +3057,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 			(at 23.622 73.66 90)
 			(effects
 				(font
@@ -3098,6 +3094,72 @@
 			(project ""
 				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 203.2 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10f802fb-d697-4e35-9707-e4061cd34e90")
+		(property "Reference" "#PWR023"
+			(at 203.2 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 203.2 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 203.2 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a79070f-b6b3-4db3-9e40-a12850483683")
+		)
+		(instances
+			(project "Platte"
+				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -3322,6 +3384,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 87.63 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "209eba3d-a3b8-4426-b020-90a15341a7cf")
+		(property "Reference" "#PWR016"
+			(at 87.63 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 87.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 87.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0400fb70-8049-4145-a2c8-1cddd1053db7")
+		)
+		(instances
+			(project "Platte"
+				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 44.45 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22057840-acda-4f80-b7a6-b1c721abb55c")
+		(property "Reference" "#PWR07"
+			(at 44.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 44.45 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 44.45 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0be99442-e372-4d77-8617-4285ae11fdfc")
+		)
+		(instances
+			(project "Platte"
+				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDA")
 		(at 208.28 50.8 0)
 		(unit 1)
@@ -3382,6 +3576,72 @@
 			(project "Platte"
 				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 143.51 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c17e124-2973-460d-9c49-c7b590fce0ef")
+		(property "Reference" "#PWR022"
+			(at 143.51 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 143.51 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 143.51 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59f39ce7-2d93-4fbb-8c78-bfdae8da9db8")
+		)
+		(instances
+			(project "Platte"
+				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -3769,7 +4029,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 			(at 31.242 73.66 90)
 			(effects
 				(font
@@ -4897,7 +5157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 			(at 38.862 73.66 90)
 			(effects
 				(font
