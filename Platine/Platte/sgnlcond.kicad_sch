@@ -1,0 +1,74 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "03f16556-6320-454c-a0d1-ae09f8e3a7d5")
+	(paper "A4")
+	(lib_symbols)
+	(global_label "data1"
+		(shape input)
+		(at 50.8 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97c9a28b-c4af-42a1-9b89-ad2d350abe53")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 42.4326 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "data3"
+		(shape input)
+		(at 49.53 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b7ca29a9-4899-4f88-9603-e057dd24b480")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.1626 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "data2"
+		(shape input)
+		(at 52.07 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f02698df-419e-4742-bf73-e7ee3c8077c4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.7026 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+)

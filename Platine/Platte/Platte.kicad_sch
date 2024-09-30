@@ -2880,9 +2880,9 @@
 		)
 		(uuid "8fabeade-77c9-4f8f-be1d-2505fcbfba27")
 	)
-	(text "Filter\n"
+	(text "Signal Conditioning\n"
 		(exclude_from_sim no)
-		(at 70.104 66.548 0)
+		(at 74.168 67.056 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5477,6 +5477,44 @@
 				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
 					(reference "#PWR021")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 95.25)
+		(size 17.78 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b3951852-0f57-416d-a61f-79016a17622d")
+		(property "Sheetname" "SgnlCond"
+			(at 190.5 94.5384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sgnlcond.kicad_sch"
+			(at 190.5 116.1546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Platte"
+				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
+					(page "2")
 				)
 			)
 		)

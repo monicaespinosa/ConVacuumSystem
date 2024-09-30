@@ -623,6 +623,10 @@
     [
       "8ec2d373-240e-44f6-ab9e-7e8ab23831f1",
       "Stammblatt"
+    ],
+    [
+      "b3951852-0f57-416d-a61f-79016a17622d",
+      "SgnlCond"
     ]
   ],
   "text_variables": {}
