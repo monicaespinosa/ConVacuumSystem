@@ -165,8 +165,15 @@ This toroid model was created using one of the predesigned macros of CST. Howeve
 
 
 ## Current measurement
-The current measurement stated in the last picture should be something like this:
-![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/2cd917ea-59be-4fdb-9466-b059a0c22ddf)
+
+### Methode
+As mentioned before, this is the electrical structure of the setup:
+
+<img width="713" alt="image" src="https://github.com/user-attachments/assets/4841e218-f58f-4549-badb-dc8962dc0f3e">
+
+The current measurement in between the plate and the voltage source V_p is more detailed here:
+
+<img width="722" alt="image" src="https://github.com/user-attachments/assets/d1c168d9-1486-4fde-a79a-fc2c6efaeaeb">
 
 The current flowing through R_mess is theorically expected to be around 5mA according to the simulations. Supposing that the current is 10mA, the following circuit was simulated to choose the value of R_mess:
 
@@ -176,32 +183,28 @@ The current flowing through R_mess is theorically expected to be around 5mA acco
 
 The voltage across Rm increases as Rm does. A value of Rm=140 ohm is temporarily chosen.
 
+The following component is a amplifier that measures the voltage across the resistor R_mess and whose output is a digital signal whose amount of 1's is proportional to the current flowing through R_mess. The used amplifier is the Si8946A, that measures voltages between -62.5 mV and +62.5 mV, and whose output has a frequency of 10MHz. As this frequency is too high for a microcontroller like Arduino to read, a phase of signal conditioning is required. The simple RC filter produces an analog signal which corresponds to an average value of the quantity of 1's contained in the digital output of the amplifier. As this output is either a 0 or a 1, the analog response of the filter varies between 0V to 1V. However, as we intend to read this signal with Arduino, in order to take of advantage of all its measuring range the to-be-measured signal should be in the full range of 0V to 5V. This is the reason why an additional operational amplifier with a gain of 5 is used. The amplifier corresponds to the TLV9001 by Texas Instruments.
+
+### PCB
+
+The whole circuitry mentioned above, intended to be used for measuring the current caused by the electrons colliding into the plate and further flowing through R_mess, will be designed to be as close as posible to the plate. As not only the amount of current is important, but also the distribution of the electrons along the plate, this last is eventually going to be divided into many smaller plates whose incoming current will be measured separatedly. The first PCB designed to try the measuring circuitry has three plates. The PCB has two layers, one of them containing the plates
+
+<img width="662" alt="image" src="https://github.com/user-attachments/assets/86f72270-88e2-4e12-a0b2-40b716db98b5">
+
+
+and the other one the Si8946A amplifiers and the connector in charge of providing feeding voltage and of letting the signals out. 
+
+<img width="607" alt="image" src="https://github.com/user-attachments/assets/2878375b-a1f5-40e5-b306-f3c0a488b9eb">
+
+To know if the digital signal at 10 MHz is able to be carried by a normal jumper cable without using a SMA connector, some calculations need to be made:
+
+Let's assume a square wave and use Bogatins rule of thumb [here](https://www.edn.com/rule-of-thumb-1-bandwidth-of-a-signal-from-its-rise-time/). According to the datasheet, the rise time is 20ns. The bandwidth of such a signal is 50 MHz, whose wavelength in free space is 6m, let's say 3m in the PCB. At 1/10th wavelength that's 30cm, which sets the upper limit to the jumper wire's length. 
+
+Another option is to attach a second PCB using a PCB to PCB connector. 
 
 
 
-Proposals of instrumentation amplifiers are:
 
-### 1. TMCS1100 (By Texas Instruments)
-The TMCS1100 is a galvanically isolated Hall-effect current sensor capable of DC or AC current measuremen. The output voltage is proportional to the input current with four sensitivity options, which are shown in the next table:
-
-<img width="537" alt="image" src="https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/e9c50c54-f587-4aef-983e-6dd9759625b7">
-
-However the smalles current that this sensor is able to measure is 125 mA (for the TMCS1100A4). This also measures up to 12 A, which should be enough. Ordering number: TMCS1100A4QDR.
-
-### 2. INA333-Q1 (By Texas Instruments)
-The INA333-Q1 is a low-power, precision instrumentation amplifier, planned to be used as follows:
-
-![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/99451df2-63c0-4bd9-bc2b-bc0e11a4809a)
-
-
-The inside schematic of the INA333-Q1:
-![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/315523b2-8e44-4ad4-ba65-47afb34f9fd2)
-
-Some specifications:
-
-![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/2ab0eaf7-e3f6-4b9a-9a2c-f7bf84dbed0c)
-
-A LTSpice simulation was done to verify the gain of the device. However the results were not exactly what is expected. Additionals simulations should be done. The file is though attached in this repository as "Draft2.asc".
 
 
 >>>>>>> main
