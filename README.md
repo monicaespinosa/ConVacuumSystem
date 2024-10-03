@@ -59,6 +59,16 @@ Final simulation moving the cylinder back again and setting its voltage to -V_S.
 
 ![image](https://github.com/monicaespinosa/ConVacuumSystem/assets/42346349/66730606-2f4f-4ead-8a13-c946194bcbe8)
 
+### Variations of the voltage on the plate
+
+Current incoming to the plate is the import_2 current.
+![image](https://github.com/user-attachments/assets/aeeb1963-d354-46de-914d-9838ce63ce42)
+
+Incoming particles:
+![image](https://github.com/user-attachments/assets/5b239f48-e5bf-4f50-a7f6-2558eb60e7aa)
+
+
+
 
 ### Changing the cathode
 For all the following simulations the following voltages are set: V_S=6.4V, V_C=-30V V_G = 1000V and V_P = 4V.
