@@ -164,13 +164,17 @@ The total current leaving the cathode was 9.35 mA. However the trajectories are 
 
 ### Toroid-Coil
 
-Moldel:
+Model:
 
-![image](https://github.com/user-attachments/assets/4dc83fb6-3ac4-4320-a37f-b22c323c6896)
 
-This toroid model was created using one of the predesigned macros of CST. However, each ring is made of small faces (in total 10000 for the whole coil), which made necessary to create a macro to select all faces in order to create a particle source out of the whole coil. The simulation results after making that are however dissapointing, the particles don't seem to be leaving the coil.
+### Clapton Coil
+This is the coil used normally for vapers. One of these was modelled in CST and looks like this:
 
-![image](https://github.com/user-attachments/assets/7731663e-2d4a-4e85-9636-51586dacb107)
+![image](https://github.com/user-attachments/assets/f94f610c-375e-4ce3-a87c-1ee080ac57ed)
+![image](https://github.com/user-attachments/assets/9b7d23bb-854c-4ea8-bda7-5f333c9dd574)
+
+
+The current incoming into the plate is 21.46uA. However, it looks like the current going through the coil is not correct. The circuit feeding the coil provides 6.4V. Guessing a source impedance of 50 Ohm, that would mean a current of 6.4V/50.3 Ohm = 12.72mm.
 
 
 
