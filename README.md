@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 # ConVacuumSystem
-This is a project done at EST-RUB. Here is the control and interface of a vacuum system using a Pfeiffer turbo pump plus a backing pump
-=======
-# ConVacuumSystem
-This is a project done at EST-RUB. Here is the control and interface of a vacuum system using a Pfeiffer turbo pump plus a backing pump
+Later I will have time to explain what this is about. Let's start with the important things.
 
 ## Current circuit
 The circuit (still to try) goes as following:
@@ -166,6 +162,14 @@ The total current leaving the cathode was 9.35 mA. However the trajectories are 
 
 Model:
 
+Trajectories: (actually a pretty straight beam)
+
+![image](https://github.com/user-attachments/assets/61397962-01c5-4844-80ed-19f65b59fd27)
+
+However, the current incoming to the plate was not as high as expected. In this case, a variation of the voltage on the plate was made and the following curve obtained:
+
+![image](https://github.com/user-attachments/assets/b1c5c519-410d-417b-ae78-d9a49f2935dc)
+
 
 ### Clapton Coil
 This is the coil used normally for vapers. One of these was modelled in CST and looks like this:
@@ -174,9 +178,11 @@ This is the coil used normally for vapers. One of these was modelled in CST and 
 ![image](https://github.com/user-attachments/assets/9b7d23bb-854c-4ea8-bda7-5f333c9dd574)
 
 
-The current incoming into the plate is 21.46uA. However, it looks like the current going through the coil is not correct. The circuit feeding the coil provides 6.4V. Guessing a source impedance of 50 Ohm, that would mean a current of 6.4V/50.3 Ohm = 12.72mm.
+The current incoming into the plate is 21.46uA. However, as the clapton coils that are found in the market have typically a diameter of 3.0mm, which for this project is too small. In order to increase the size of the cathode, a few of them can be placed together. For this purpose, four clapton coils forming a loop was simulated:
 
+![image](https://github.com/user-attachments/assets/8c0eaacb-1cc8-42df-b9ec-4c201288bf88)
 
+PLACE RESULTS HERE////////////////////////////////////////////////////////////////////////////////////
 
 ## Current measurement
 
