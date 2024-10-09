@@ -170,6 +170,11 @@ However, the current incoming to the plate was not as high as expected. In this 
 
 ![image](https://github.com/user-attachments/assets/b1c5c519-410d-417b-ae78-d9a49f2935dc)
 
+A dependency of the current to the voltage on the grid was also tested. The results below show in fact that the highest this voltage is, the highest the current.
+
+![image](https://github.com/user-attachments/assets/6f8c58db-c02f-47ba-9a23-3d7e6d747f1d)
+
+
 
 ### Clapton Coil
 This is the coil used normally for vapers. One of these was modelled in CST and looks like this:
