@@ -187,7 +187,13 @@ The current incoming into the plate is 21.46uA. However, as the clapton coils th
 
 ![image](https://github.com/user-attachments/assets/8c0eaacb-1cc8-42df-b9ec-4c201288bf88)
 
-PLACE RESULTS HERE////////////////////////////////////////////////////////////////////////////////////
+Trajectories: Not so straight directed to the center of the beam.
+
+![image](https://github.com/user-attachments/assets/7891688d-e70d-4bd8-8186-6aaff8455f88)
+
+Current incoming to the plate: 0.18 mA
+
+
 
 ## Current measurement
 
