@@ -162,6 +162,7 @@ The total current leaving the cathode was 9.35 mA. However the trajectories are 
 
 Model:
 
+
 Trajectories: (actually a pretty straight beam)
 
 ![image](https://github.com/user-attachments/assets/61397962-01c5-4844-80ed-19f65b59fd27)
@@ -173,6 +174,17 @@ However, the current incoming to the plate was not as high as expected. In this 
 A dependency of the current to the voltage on the grid was also tested. The results below show in fact that the highest this voltage is, the highest the current.
 
 ![image](https://github.com/user-attachments/assets/6f8c58db-c02f-47ba-9a23-3d7e6d747f1d)
+
+As the shape of the beam seems to be well centered, another try using two toroids was given a shot. The model of the cathode goes as following:
+
+![image](https://github.com/user-attachments/assets/8d12bdb7-582f-4c59-bc16-9132b5732f1e)
+
+As expected, the trajectories:
+
+![image](https://github.com/user-attachments/assets/72b471bf-ea45-4ec6-9a80-93a04b0fc4d9)
+
+However the current across the platte is 50 uA. 
+
 
 
 
