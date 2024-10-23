@@ -1,24 +1,24 @@
-Circuit: * C:\Users\huawei\Documents\GitHub\ConVacuumSystem\Platine\StromMessung.asc
+Circuit: * \\flexo\dasadirs\Moreno.bae\ConVacuumSystem\Platine\StromMessung.asc
 
-Limiting rise time of source v§clock to 1.66667e-09
-Limiting fall time of source v§clock to 1.66667e-09
+Limiting rise time of source v§clock to 5e-09
+Limiting fall time of source v§clock to 5e-09
 Direct Newton iteration for .op point succeeded.
 
-Date: Tue Oct 22 18:22:07 2024
-Total elapsed time: 30.178 seconds.
+Date: Wed Oct 23 17:10:06 2024
+Total elapsed time: 98.611 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2810703
-traniter = 2810666
-tranpoints = 1095282
-accept = 972038
-rejected = 123244
+totiter = 4435775
+traniter = 4435738
+tranpoints = 1462501
+accept = 1209824
+rejected = 252677
 matrix size = 67
 fillins = 36
 solver = Normal
 Avg thread counts: 1.0/1.0/1.0/1.0
-Matrix Compiler1: 4.47 KB object code size  3.8/1.4/[1.5]
-Matrix Compiler2: 5.65 KB object code size  1.3/2.6/[1.3]
+Matrix Compiler1: 4.47 KB object code size  2.4/1.5/[0.4]
+Matrix Compiler2: 5.65 KB object code size  1.0/2.2/[0.6]
 
