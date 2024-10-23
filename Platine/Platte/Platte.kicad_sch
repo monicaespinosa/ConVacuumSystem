@@ -2017,12 +2017,6 @@
 		(uuid "18c9db3c-a70c-4924-899f-f4c170a7c7a6")
 	)
 	(junction
-		(at 127 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1d99780b-16dc-4e78-8379-76f27a9d7e3d")
-	)
-	(junction
 		(at 27.94 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2033,18 +2027,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "526e7497-ecc9-4601-a46c-8e1c2b9282f2")
-	)
-	(junction
-		(at 139.7 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "567bfd4c-efd9-4a34-8d30-49b1efa5fe2b")
-	)
-	(junction
-		(at 139.7 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "79b587ed-abf8-4c92-9b62-d0507fae94ba")
 	)
 	(junction
 		(at 224.79 80.01)
@@ -2087,12 +2069,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f61c62cc-5be4-4251-9fac-d3b65161344e")
-	)
-	(junction
-		(at 127 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fccec4cf-8eb1-403d-a52b-90ee3c99ae51")
 	)
 	(no_connect
 		(at 86.36 100.33)
@@ -2244,36 +2220,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 111.76) (xy 152.4 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27670eb4-8ec3-4899-a855-e62f98f255d9")
-	)
-	(wire
-		(pts
-			(xy 127 96.52) (xy 139.7 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27e08051-97da-4014-b5a1-85a15b3b1ec5")
-	)
-	(wire
-		(pts
-			(xy 139.7 111.76) (xy 152.4 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a9c24b0-1694-4f55-acc1-e2bd69bca512")
-	)
-	(wire
-		(pts
 			(xy 29.21 87.63) (xy 30.48 87.63)
 		)
 		(stroke
@@ -2381,16 +2327,6 @@
 			(type default)
 		)
 		(uuid "4826e272-d1d7-4ec6-ad20-a6aff16ba83e")
-	)
-	(wire
-		(pts
-			(xy 139.7 96.52) (xy 139.7 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "482cb570-ab46-4b62-804e-5ae0c625882c")
 	)
 	(wire
 		(pts
@@ -2824,16 +2760,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 96.52) (xy 152.4 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adcc5acc-0f0c-4c77-9c0a-04e5e45ba377")
-	)
-	(wire
-		(pts
 			(xy 138.43 36.83) (xy 138.43 38.1)
 		)
 		(stroke
@@ -2871,16 +2797,6 @@
 			(type default)
 		)
 		(uuid "c1fa4ab3-ea25-4d47-a399-ddd557b0e475")
-	)
-	(wire
-		(pts
-			(xy 127 111.76) (xy 139.7 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6e64b60-d6b6-492b-9fe6-301e19c5ec6b")
 	)
 	(wire
 		(pts
@@ -3054,16 +2970,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 111.76) (xy 139.7 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee8ba60c-5b4e-4543-9c18-aec27cb91203")
-	)
-	(wire
-		(pts
 			(xy 220.98 80.01) (xy 224.79 80.01)
 		)
 		(stroke
@@ -3071,16 +2977,6 @@
 			(type default)
 		)
 		(uuid "f2fd2fe5-f70d-40a6-974c-8ddf9ddce580")
-	)
-	(wire
-		(pts
-			(xy 152.4 96.52) (xy 152.4 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f305d331-f4b3-45fb-b6d2-1b2299dc8953")
 	)
 	(wire
 		(pts
@@ -3783,76 +3679,6 @@
 			(project "Platte"
 				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 152.4 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09470f5a-419a-4d91-8c31-27c197761eca")
-		(property "Reference" "C6"
-			(at 156.21 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 156.21 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 153.3652 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.4 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 152.4 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a754c76c-98b6-4c52-82eb-5028515c77c8")
-		)
-		(pin "1"
-			(uuid "4576e138-7475-438e-b7ec-1768bc38d886")
-		)
-		(instances
-			(project "Platte"
-				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
-					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -5600,76 +5426,6 @@
 			(project "Platte"
 				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 139.7 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a69c55db-0a14-4af5-a876-cb0797560bc9")
-		(property "Reference" "C5"
-			(at 143.51 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 143.51 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 140.6652 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 139.7 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2d7941b5-658a-4979-9d70-a0ca895c1b39")
-		)
-		(pin "1"
-			(uuid "774b6d91-a7e5-424f-9e92-cd1c02d5d911")
-		)
-		(instances
-			(project "Platte"
-				(path "/8ec2d373-240e-44f6-ab9e-7e8ab23831f1"
-					(reference "C5")
 					(unit 1)
 				)
 			)
