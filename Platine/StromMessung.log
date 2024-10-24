@@ -4,21 +4,21 @@ Limiting rise time of source v§clock to 5e-09
 Limiting fall time of source v§clock to 5e-09
 Direct Newton iteration for .op point succeeded.
 
-Date: Wed Oct 23 17:10:06 2024
-Total elapsed time: 98.611 seconds.
+Date: Thu Oct 24 13:28:50 2024
+Total elapsed time: 106.108 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 4435775
-traniter = 4435738
-tranpoints = 1462501
-accept = 1209824
-rejected = 252677
+totiter = 4448607
+traniter = 4448570
+tranpoints = 1464775
+accept = 1211420
+rejected = 253355
 matrix size = 67
 fillins = 36
 solver = Normal
 Avg thread counts: 1.0/1.0/1.0/1.0
-Matrix Compiler1: 4.47 KB object code size  2.4/1.5/[0.4]
-Matrix Compiler2: 5.65 KB object code size  1.0/2.2/[0.6]
+Matrix Compiler1: 4.47 KB object code size  0.8/1.1/[0.3]
+Matrix Compiler2: 5.65 KB object code size  0.5/1.9/[0.4]
 
