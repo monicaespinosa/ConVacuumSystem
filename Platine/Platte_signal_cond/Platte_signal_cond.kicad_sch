@@ -2209,6 +2209,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 35.56) (xy 215.9 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f3809b1-2e7c-4757-b0e5-7bce5c2010b8")
+	)
+	(wire
+		(pts
 			(xy 46.99 166.37) (xy 53.34 166.37)
 		)
 		(stroke
@@ -2306,16 +2316,6 @@
 			(type default)
 		)
 		(uuid "366bbc31-f2e9-43fa-831d-a191df73db34")
-	)
-	(wire
-		(pts
-			(xy 214.63 35.56) (xy 215.9 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "371472fd-3aed-4971-a478-b389708bc775")
 	)
 	(wire
 		(pts
@@ -2559,6 +2559,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 43.18) (xy 120.65 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dce9abc-d9d6-48d0-8410-929934a6330f")
+	)
+	(wire
+		(pts
 			(xy 83.82 163.83) (xy 87.63 163.83)
 		)
 		(stroke
@@ -2659,16 +2669,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 43.18) (xy 120.65 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89fea649-f953-4f7a-9ad4-b87de6622f3d")
-	)
-	(wire
-		(pts
 			(xy 87.63 142.24) (xy 87.63 153.67)
 		)
 		(stroke
@@ -2736,6 +2736,16 @@
 			(type default)
 		)
 		(uuid "9071694e-b1dc-484f-8ab6-120b4df86d0f")
+	)
+	(wire
+		(pts
+			(xy 214.63 40.64) (xy 215.9 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "925c2a45-0799-4e65-b05b-0ec4a001d198")
 	)
 	(wire
 		(pts
@@ -2836,6 +2846,16 @@
 			(type default)
 		)
 		(uuid "acbc3000-21fc-4bf9-9f9a-950126f2c8e5")
+	)
+	(wire
+		(pts
+			(xy 214.63 38.1) (xy 215.9 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae481081-cbfb-4808-a1b7-dce8bb771023")
 	)
 	(wire
 		(pts
@@ -3009,6 +3029,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 46.99) (xy 120.65 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdaff98a-efee-4668-954b-45fae256cb64")
+	)
+	(wire
+		(pts
 			(xy 257.81 50.8) (xy 260.35 50.8)
 		)
 		(stroke
@@ -3076,16 +3106,6 @@
 			(type default)
 		)
 		(uuid "daaf1ca0-82d0-49f8-84f0-e8621c2ad8cd")
-	)
-	(wire
-		(pts
-			(xy 214.63 38.1) (xy 215.9 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc88a7d1-3a13-46ca-8b37-a357e47f7d1f")
 	)
 	(wire
 		(pts
@@ -3169,16 +3189,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 40.64) (xy 215.9 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f12d0020-a8f0-4c57-b16a-4933a568007b")
-	)
-	(wire
-		(pts
 			(xy 82.55 41.91) (xy 87.63 41.91)
 		)
 		(stroke
@@ -3206,16 +3216,6 @@
 			(type default)
 		)
 		(uuid "f9aaa77d-53fe-4b1c-8616-984d97c5953e")
-	)
-	(wire
-		(pts
-			(xy 119.38 46.99) (xy 120.65 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9dd1db5-1899-4d81-a827-764b692820ff")
 	)
 	(wire
 		(pts
@@ -3277,13 +3277,14 @@
 		)
 		(uuid "ff9cbc57-91db-489c-a047-8e67b6ca436c")
 	)
-	(text "Von draußen"
+	(text "kommt aus Draußen: 3.3VD, GNDD, VPlatte\ndrinnen: 3.3VA, GNDA"
 		(exclude_from_sim no)
-		(at 113.792 75.438 0)
+		(at 104.14 72.644 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "0e3f3b84-0e33-4b8b-8cae-c75cf9904034")
 	)
@@ -3300,7 +3301,7 @@
 	)
 	(text "DC/DC isolated Wandler"
 		(exclude_from_sim no)
-		(at 125.476 68.326 0)
+		(at 115.824 69.342 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3329,9 +3330,9 @@
 		)
 		(uuid "890d4b6c-8da8-429b-95ba-99fe09bb09ee")
 	)
-	(text "Stecker (zw. Sign. cond.\nPlatine und Verstärker)"
+	(text "Stecker (zw. Sign. cond.\nPlatine und Platte-Platine)"
 		(exclude_from_sim no)
-		(at 255.778 23.622 0)
+		(at 258.318 24.892 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3449,7 +3450,7 @@
 		(uuid "520be574-24d0-4b0a-9b34-d913ce7cde44")
 	)
 	(label "Vin2+"
-		(at 119.38 46.99 180)
+		(at 119.38 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3504,7 +3505,7 @@
 		(uuid "857e939f-fb36-46fc-9320-99134a5b18a1")
 	)
 	(label "Vin2-"
-		(at 119.38 43.18 180)
+		(at 119.38 46.99 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3547,7 +3548,7 @@
 		)
 		(uuid "a86b8b6f-2d5d-48a3-87d4-1525c132844d")
 	)
-	(label "1000 V"
+	(label "VPlatte(60V)"
 		(at 215.9 45.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3581,7 +3582,7 @@
 		(uuid "bd4a7a30-7e71-4416-bdf2-aa2a13720e94")
 	)
 	(label "Out2"
-		(at 215.9 38.1 0)
+		(at 215.9 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3592,7 +3593,7 @@
 		(uuid "c199b0c3-7e7e-470c-a1fa-44feb8347b63")
 	)
 	(label "Out1"
-		(at 215.9 35.56 0)
+		(at 215.9 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3613,7 +3614,7 @@
 		)
 		(uuid "d654c7c7-b7a6-4d85-82ae-c9acffb2ff39")
 	)
-	(label "1000 V"
+	(label "VPlatte(60V)"
 		(at 142.24 95.25 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3636,7 +3637,7 @@
 		(uuid "e340c130-ff2e-48a5-9a27-693f6bb2664b")
 	)
 	(label "Out3"
-		(at 215.9 40.64 0)
+		(at 215.9 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4301,10 +4302,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "36613053-c6e5-4a76-acc3-6af3a8a46c6c")
 		(property "Reference" "J2"
-			(at 250.19 41.5543 0)
+			(at 247.142 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4313,7 +4313,7 @@
 			)
 		)
 		(property "Value" "Conn_01x07_MountingPin"
-			(at 250.19 44.0943 0)
+			(at 249.682 31.496 90)
 			(effects
 				(font
 					(size 1.27 1.27)
