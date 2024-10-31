@@ -3249,9 +3249,9 @@
 		)
 		(uuid "be47ad17-79ce-442c-bbc3-74c775724254")
 	)
-	(text "Outputs: "
+	(text "Outputs: fil_da1, \nfil_da2, fil_da3"
 		(exclude_from_sim no)
-		(at 46.482 101.854 0)
+		(at 38.354 103.632 0)
 		(effects
 			(font
 				(size 1.27 1.27)

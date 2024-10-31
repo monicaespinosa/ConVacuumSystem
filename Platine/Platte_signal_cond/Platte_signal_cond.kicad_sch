@@ -2072,10 +2072,10 @@
 		(uuid "9c338881-06b8-4125-bf23-0750ab5cb487")
 	)
 	(junction
-		(at 138.43 95.25)
+		(at 114.3 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a2e34222-10b1-4c7c-afbd-1c3158d06971")
+		(uuid "d72ccd9a-c0d0-42f1-8108-9075ede98c10")
 	)
 	(junction
 		(at 72.39 104.14)
@@ -2176,6 +2176,16 @@
 			(type default)
 		)
 		(uuid "17f4bbb4-289b-45ee-a716-f84411a0f7fd")
+	)
+	(wire
+		(pts
+			(xy 113.03 95.25) (xy 114.3 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18bc865c-9421-4555-a385-f7dcf24f9498")
 	)
 	(wire
 		(pts
@@ -2406,16 +2416,6 @@
 			(type default)
 		)
 		(uuid "49c0fade-12d3-4212-af43-3a078f3ee497")
-	)
-	(wire
-		(pts
-			(xy 138.43 95.25) (xy 142.24 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b86e6ac-3d8e-4d8f-b810-8c3c3f5ef31b")
 	)
 	(wire
 		(pts
@@ -3353,7 +3353,7 @@
 	)
 	(text "Stecker (von draußen)"
 		(exclude_from_sim no)
-		(at 209.042 25.4 0)
+		(at 213.868 24.892 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3615,13 +3615,13 @@
 		(uuid "d654c7c7-b7a6-4d85-82ae-c9acffb2ff39")
 	)
 	(label "VPlatte(60V)"
-		(at 142.24 95.25 0)
+		(at 113.03 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "db95db89-fb9e-42da-be4d-c3426fcc1918")
 	)
