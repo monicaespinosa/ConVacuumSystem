@@ -1,24 +1,25 @@
-Circuit: * C:\Users\huawei\Documents\GitHub\ConVacuumSystem\Platine\StromMessung_einfacher.asc
+Circuit: * \\flexo\dasadirs\Moreno.bae\ConVacuumSystem\Platine\StromMessung_einfacher.asc
 
 Limiting rise time of source v1 to 9e-10
 Limiting fall time of source v1 to 9e-10
+WARNING: Less than two connections to node n004.  This node is used by v2.
 Direct Newton iteration for .op point succeeded.
 
-Date: Fri Jan 24 17:40:53 2025
-Total elapsed time: 1.198 seconds.
+Date: Tue Jan 21 18:21:44 2025
+Total elapsed time: 1.921 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 621475
-traniter = 621442
-tranpoints = 310722
-accept = 250616
-rejected = 60106
-matrix size = 10
+totiter = 632432
+traniter = 632398
+tranpoints = 316200
+accept = 254999
+rejected = 61201
+matrix size = 14
 fillins = 0
 solver = Normal
 Avg thread counts: 1.0/1.0/1.0/1.0
-Matrix Compiler1:      23 opcodes  0.3/[0.2]/0.2
-Matrix Compiler2: off  [0.1]/0.2/0.2
+Matrix Compiler1: 564 bytes object code size  0.2/0.3/[0.1]
+Matrix Compiler2: off  [0.3]/0.3/0.7
 
