@@ -1,24 +1,105 @@
 Circuit: * \\flexo\dasadirs\Moreno.bae\ConVacuumSystem\Platine\StromMessung_linearity.asc
 
-Limiting rise time of source v1 to 9e-10
-Limiting fall time of source v1 to 9e-10
-WARNING: Less than two connections to node n001.  This node is used by v1.
+Limiting rise time of source v1 to 9.9e-10
+Limiting fall time of source v1 to 9.9e-10
+WARNING: Less than two connections to node n007.  This node is used by v2.
 Direct Newton iteration for .op point succeeded.
+.step t_on=1.04e-08
+.step t_on=1.09e-08
+.step t_on=1.14e-08
+.step t_on=1.19e-08
+.step t_on=1.24e-08
+.step t_on=1.29e-08
+.step t_on=1.34e-08
+.step t_on=1.39e-08
+.step t_on=1.44e-08
+.step t_on=1.49e-08
+.step t_on=1.54e-08
+.step t_on=1.59e-08
+.step t_on=1.64e-08
+.step t_on=1.69e-08
+.step t_on=1.74e-08
+.step t_on=1.79e-08
+.step t_on=1.84e-08
+.step t_on=1.89e-08
+.step t_on=1.94e-08
+.step t_on=1.99e-08
+.step t_on=2.04e-08
+.step t_on=2.09e-08
+.step t_on=2.14e-08
+.step t_on=2.19e-08
+.step t_on=2.24e-08
+.step t_on=2.29e-08
+.step t_on=2.34e-08
+.step t_on=2.39e-08
+.step t_on=2.44e-08
+.step t_on=2.49e-08
+.step t_on=2.54e-08
+.step t_on=2.59e-08
+.step t_on=2.64e-08
+.step t_on=2.69e-08
+.step t_on=2.74e-08
+.step t_on=2.79e-08
+.step t_on=2.84e-08
+.step t_on=2.89e-08
+.step t_on=2.94e-08
+.step t_on=2.99e-08
+.step t_on=3.04e-08
+.step t_on=3.09e-08
+.step t_on=3.14e-08
+.step t_on=3.19e-08
+.step t_on=3.24e-08
+.step t_on=3.29e-08
+.step t_on=3.34e-08
+.step t_on=3.39e-08
+.step t_on=3.44e-08
+.step t_on=3.49e-08
+.step t_on=3.54e-08
+.step t_on=3.59e-08
+.step t_on=3.64e-08
+.step t_on=3.69e-08
+.step t_on=3.74e-08
+.step t_on=3.79e-08
+.step t_on=3.84e-08
+.step t_on=3.89e-08
+.step t_on=3.94e-08
+.step t_on=3.99e-08
+.step t_on=4.04e-08
+.step t_on=4.09e-08
+.step t_on=4.14e-08
+.step t_on=4.19e-08
+.step t_on=4.24e-08
+.step t_on=4.29e-08
+.step t_on=4.34e-08
+.step t_on=4.39e-08
+.step t_on=4.44e-08
+.step t_on=4.49e-08
+.step t_on=4.54e-08
+.step t_on=4.59e-08
+.step t_on=4.64e-08
+.step t_on=4.69e-08
+.step t_on=4.74e-08
+.step t_on=4.79e-08
+.step t_on=4.84e-08
+.step t_on=4.89e-08
+.step t_on=4.94e-08
+.step t_on=4.95e-08
 
-Date: Fri Jan 31 11:14:51 2025
-Total elapsed time: 0.088 seconds.
+Date: Fri Feb  7 10:17:51 2025
+Total elapsed time: 116.085 seconds.
 
 tnom = 27
 temp = 27
-method = trap
-totiter = 29
-traniter = 0
-tranpoints = 0
-accept = 0
-rejected = 0
-matrix size = 14
-fillins = 1
+method = modified trap
+totiter = 526982
+traniter = 526948
+tranpoints = 263475
+accept = 205687
+rejected = 57788
+matrix size = 12
+fillins = 0
 solver = Normal
-Avg thread counts: 8.0/0.0/8.0/5.6
-Matrix Compiler1:      35 opcodes
-Matrix Compiler2: 1.08 KB object code size
+Avg thread counts: 1.0/1.0/1.0/1.0
+Matrix Compiler1: off  [0.1]/0.2/0.2
+Matrix Compiler2: off  [0.2]/0.3/0.2
+
