@@ -5397,7 +5397,7 @@
 		(layer "Edge.Cuts")
 		(uuid "253d599a-3131-4ea4-9ff7-de0f7aa9436c")
 	)
-	(gr_text "I VA\nI VD\nO D1\nO D2\nO D3\nO Da3\nO GD\nI GA"
+	(gr_text "I VA\nI VD\nO D1\nO D2\nO D3\nO GD\nI GA"
 		(at 109.9 73.4 0)
 		(layer "F.SilkS")
 		(uuid "0df4406b-97b9-4291-b660-47db5dc01f2f")
