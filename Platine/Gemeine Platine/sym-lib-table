@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "74ls20D")(type "KiCad")(uri "C:/Users/dasa/Documents/GitHub/AbuDhabi1/PCB design extra files/MAX485ESA_T/74ls20D.kicad_sym")(options "")(descr ""))
-  (lib (name "MM74HC")(type "KiCad")(uri "${KIPRJMOD}/MM74HC/MM74HC.kicad_sym")(options "")(descr ""))
-)

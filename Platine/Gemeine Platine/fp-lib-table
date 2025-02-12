@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "MAX485")(type "KiCad")(uri "${KIPRJMOD}/MAX485ESA_T/MAX485.pretty")(options "")(descr ""))
-)
