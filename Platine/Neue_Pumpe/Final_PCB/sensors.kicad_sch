@@ -3777,7 +3777,7 @@
 		)
 		(uuid "8275fded-7706-40dd-9940-39bf9e128139")
 	)
-	(label "analog_inp_8"
+	(label "analog_inp_7"
 		(at 214.63 45.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3810,7 +3810,7 @@
 		)
 		(uuid "8b8b251f-1751-42b0-b5b3-fb63628dca26")
 	)
-	(label "analog_inp_10"
+	(label "analog_inp_9"
 		(at 214.63 53.34 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3986,7 +3986,7 @@
 		)
 		(uuid "df5720f2-d5b6-4d45-951f-3b1981134e82")
 	)
-	(label "analog_inp_9"
+	(label "analog_inp_8"
 		(at 214.63 49.53 0)
 		(fields_autoplaced yes)
 		(effects
