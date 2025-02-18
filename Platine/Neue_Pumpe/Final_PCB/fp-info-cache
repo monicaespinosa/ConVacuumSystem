@@ -1,4 +1,4 @@
-23843121316792577
+23848340827652707
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -32808,6 +32808,20 @@ Surface mounted pin header SMD 2x40 1.27mm double row
 0
 80
 80
+Connector_PinHeader_1.27mm_modified
+PinHeader_2x03_P1.27mm_Vertical_SMD
+surface-mounted straight pin header, 2x03, 1.27mm pitch, double rows
+Surface mounted pin header SMD 2x03 1.27mm double row
+0
+6
+6
+Connector_PinHeader_1.27mm_modified
+PinHeader_2x04_P1.27mm_Vertical_SMD
+surface-mounted straight pin header, 2x04, 1.27mm pitch, double rows
+Surface mounted pin header SMD 2x04 1.27mm double row
+0
+8
+8
 Connector_PinHeader_2.00mm
 PinHeader_1x01_P2.00mm_Horizontal
 Through hole angled pin header, 1x01, 2.00mm pitch, 4.2mm pin length, single row
@@ -88990,6 +89004,13 @@ rotary encoder illuminated switch vertical
 0
 9
 8
+SHF-106-01-L-D-SM
+SHF-106-01-L-D-SM
+
+
+0
+12
+12
 Samtec-FTSH-105-01-L-DV-K
 FTSH-105-01-L-DV-K
 FTSH-105-01-L-DV-K-2
