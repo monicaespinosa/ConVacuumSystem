@@ -1,4 +1,4 @@
-23848340827810662
+23843122154135114
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -56706,20 +56706,6 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
-FLE-105-01-G-DV-K-TR
-Conn-FLE-105-01-G-DV-K-TR
-
-
-0
-0
-0
-FLE-105-01-G-DV-K-TR
-FLE-105-01-X-DV-Y-TR
-FLE-105-01-X-DV-Y-TR
-Connector
-0
-10
-10
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -67395,6 +67381,13 @@ net tie
 0
 4
 4
+OSTTE020104
+OST_OSTTE020104
+
+
+0
+2
+2
 OptoDevice
 ADNS-9800
 Laser Gaming Sensor ADNS-9800
@@ -89004,20 +88997,6 @@ rotary encoder illuminated switch vertical
 0
 9
 8
-SHF-106-01-L-D-SM
-SHF-106-01-L-D-SM
-
-
-0
-12
-12
-Samtec-FTSH-105-01-L-DV-K
-FTSH-105-01-L-DV-K
-FTSH-105-01-L-DV-K-2
-Connector
-0
-10
-10
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf

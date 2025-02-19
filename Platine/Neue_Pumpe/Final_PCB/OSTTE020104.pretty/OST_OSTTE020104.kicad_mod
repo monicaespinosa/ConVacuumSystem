@@ -1,0 +1,174 @@
+(footprint "OST_OSTTE020104"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -1.125645 -4.337545 0)
+		(layer "F.SilkS")
+		(uuid "a5992819-55b3-4ee6-9294-868322fabbc5")
+		(effects
+			(font
+				(size 1.000591 1.000591)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "OST_OSTTE020104"
+		(at 5.229005 4.568475 0)
+		(layer "F.Fab")
+		(uuid "c3cdc3cb-d3cc-4a70-ac83-d4047b7eb308")
+		(effects
+			(font
+				(size 1.000764 1.000764)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3efbf89b-f627-449e-846b-562278c14d41")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78a120b4-d68d-40ec-b8ed-2cdbc7bb0afa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "356d6de5-0d91-4b9c-af54-042e4bd191cc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -4.05 -3.4)
+		(end 4.05 -3.4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6b8854ae-54bc-4fb0-90c2-c101564cf043")
+	)
+	(fp_line
+		(start -4.05 3.6)
+		(end -4.05 -3.4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d1402b12-5e4e-48e5-8164-4ff17bf95d31")
+	)
+	(fp_line
+		(start 4.05 -3.4)
+		(end 4.05 3.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1b26510f-253f-477a-8797-2d5d154f0cc7")
+	)
+	(fp_line
+		(start 4.05 3.6)
+		(end -4.05 3.6)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5169d2c4-da5a-4837-87df-e2f814d38f84")
+	)
+	(fp_line
+		(start -4.3 -3.65)
+		(end 4.3 -3.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9e28c04e-62d8-4379-a262-253ef124def6")
+	)
+	(fp_line
+		(start -4.3 3.85)
+		(end -4.3 -3.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "57bc26cc-8a04-4ca2-966d-4e97445f50ad")
+	)
+	(fp_line
+		(start 4.3 -3.65)
+		(end 4.3 3.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "91a802e5-d6ca-4ce3-b116-d25dcf5eff38")
+	)
+	(fp_line
+		(start 4.3 3.85)
+		(end -4.3 3.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "968b2458-3078-47ab-9c79-451aad40442a")
+	)
+	(pad "1" thru_hole rect
+		(at -1.75 0)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "42b507ae-67c6-40bf-9c71-a9fe076e2ee9")
+	)
+	(pad "2" thru_hole circle
+		(at 1.75 0)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "d798c333-3e4e-41cd-8508-df99a694d233")
+	)
+	(model "C:/Users/dasa/OneDrive/Documents/RUB/Bachelorarbeit/Footprints/OSTTE020104/OSTTE020104.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
