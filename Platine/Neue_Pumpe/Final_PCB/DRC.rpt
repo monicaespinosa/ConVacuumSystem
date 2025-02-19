@@ -1,0 +1,354 @@
+** Drc report for Final_PCB.kicad_pcb **
+** Created on 2025-02-18T22:34:09+0100 **
+
+** Found 15 DRC violations **
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage B.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(68.2000 mm, 60.0000 mm): Zone [GNDA] auf B.Cu
+    @(72.7000 mm, 63.0700 mm): Durchsteckpad 2 [GNDA] von J8
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage B.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(74.3000 mm, 34.1000 mm): Zone [GNDA] auf B.Cu
+    @(72.7100 mm, 35.8000 mm): Pad 8 [GNDA] von J6 auf B.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage B.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf B.Cu
+    @(64.0200 mm, 64.3400 mm): Durchsteckpad 1 [GNDD] von J9
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage F.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(61.9000 mm, 33.7000 mm): Zone [GNDD] auf F.Cu
+    @(82.7625 mm, 28.1500 mm): Pad 1 [GNDD] von C25 auf F.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage F.Cu; 1 Speichen zu isolierter Insel verbunden)
+    Local override; error
+    @(68.2000 mm, 60.0000 mm): Zone [GNDA] auf F.Cu
+    @(72.7000 mm, 63.0700 mm): Durchsteckpad 2 [GNDA] von J8
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage F.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(84.6000 mm, 34.1000 mm): Zone [GNDA] auf F.Cu
+    @(82.8250 mm, 35.2250 mm): Pad 3 [GNDA] von U5 auf F.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage B.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(74.3000 mm, 34.1000 mm): Zone [GNDA] auf B.Cu
+    @(78.7750 mm, 30.2650 mm): Pad 3 [GNDA] von U13 auf B.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage B.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(74.3000 mm, 34.1000 mm): Zone [GNDA] auf B.Cu
+    @(77.2750 mm, 43.5825 mm): Pad 1 [GNDA] von C32 auf B.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage B.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(73.5000 mm, 28.2000 mm): Zone [GNDD] auf B.Cu
+    @(72.7000 mm, 26.6000 mm): Pad 2 [GNDD] von C44 auf B.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage B.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(74.3000 mm, 34.1000 mm): Zone [GNDA] auf B.Cu
+    @(79.1000 mm, 39.7750 mm): Pad 3 [GNDA] von U10 auf B.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage B.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(73.5000 mm, 28.2000 mm): Zone [GNDD] auf B.Cu
+    @(84.3500 mm, 38.5050 mm): Pad 5 [GNDD] von U10 auf B.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage F.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf F.Cu
+    @(64.0200 mm, 64.3400 mm): Durchsteckpad 1 [GNDD] von J9
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage F.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf F.Cu
+    @(87.5625 mm, 77.6000 mm): Pad 1 [GNDD] von C36 auf F.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage F.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf F.Cu
+    @(87.3000 mm, 75.4750 mm): Pad 2 [GNDD] von C49 auf F.Cu
+[starved_thermal]: Verbindung der thermischen Entlastung zur Zone unvollständig (Lage B.Cu; Zone min. Speichenanzahl 2; tatsächlich 1)
+    Local override; error
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf B.Cu
+    @(74.5375 mm, 75.2875 mm): Pad 1 [GNDD] von C21 auf B.Cu
+
+** Found 71 unconnected pads **
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(87.5625 mm, 72.1500 mm): Pad 1 [GNDD] von C40 auf F.Cu
+    @(87.9250 mm, 71.8875 mm): Pad 1 [GNDD] von C20 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(66.4375 mm, 88.4250 mm): Pad 1 [GNDD] von C14 auf B.Cu
+    @(66.1625 mm, 88.0250 mm): Pad 1 [GNDD] von C1 auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(68.6825 mm, 74.1500 mm): Pad 11 [GNDD] von U1 auf F.Cu
+    @(69.0125 mm, 74.5350 mm): Pad 11 [GNDD] von U3 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(71.2625 mm, 87.9750 mm): Pad 1 [GNDD] von C3 auf F.Cu
+    @(71.5375 mm, 88.4750 mm): Pad 1 [GNDD] von C13 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(84.0250 mm, 28.9950 mm): Pad 5 [GNDD] von U13 auf B.Cu
+    @(84.0950 mm, 29.9750 mm): Pad 5 [GNDD] von U5 auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(87.3500 mm, 34.1625 mm): Pad 2 [GNDD] von C50 auf B.Cu
+    @(87.1500 mm, 33.1500 mm): Pad 2 [GNDD] von C42 auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(72.7000 mm, 26.6000 mm): Pad 2 [GNDD] von C44 auf B.Cu
+    @(71.4750 mm, 28.1000 mm): Pad 1 [GNDD] von C29 auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(86.3000 mm, 36.6750 mm): Pad 1 [GNDD] von C27 auf F.Cu
+    @(84.3500 mm, 38.5050 mm): Pad 5 [GNDD] von U10 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(83.4500 mm, 90.9100 mm): Pad 5 [GNDD] von J1 auf F.Cu
+    @(86.4250 mm, 91.1500 mm): Pad 2 [GNDD] von R20 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf F.Cu
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf B.Cu
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(61.9000 mm, 33.7000 mm): Zone [GNDD] auf F.Cu
+    @(61.9000 mm, 33.7000 mm): Zone [GNDD] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(72.7625 mm, 88.0000 mm): Pad 2 [GNDD] von R15 auf F.Cu
+    @(78.1750 mm, 85.4750 mm): Pad 2 [GNDD] von R32 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(67.8000 mm, 60.0000 mm): Zone [GNDD] auf F.Cu
+    @(64.0200 mm, 64.3400 mm): Durchsteckpad 1 [GNDD] von J9
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(83.4375 mm, 67.4000 mm): Pad 2 [GNDD] von R33 auf B.Cu
+    @(80.6375 mm, 47.7000 mm): Pad 2 [GNDD] von C43 auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(68.6825 mm, 79.1000 mm): Pad 4 [+3.3VD] von U1 auf F.Cu
+    @(69.0125 mm, 79.4850 mm): Leiterbahn [+3.3VD] auf B.Cu, Länge 0.3005 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(84.3500 mm, 42.3150 mm): Pad 8 [+3.3VD] von U10 auf B.Cu
+    @(84.2625 mm, 44.0000 mm): Pad 2 [+3.3VD] von C38 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(84.9250 mm, 40.1950 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 0.4200 mm
+    @(84.3500 mm, 42.3150 mm): Pad 8 [+3.3VD] von U10 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(84.9250 mm, 39.7750 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 1.9445 mm
+    @(84.0250 mm, 34.1125 mm): Leiterbahn [+3.3VD] auf B.Cu, Länge 0.3359 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(80.2850 mm, 29.9750 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 1.0725 mm
+    @(84.0250 mm, 32.8050 mm): Leiterbahn [+3.3VD] auf B.Cu, Länge 1.3075 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(66.5950 mm, 29.9750 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 1.2657 mm
+    @(73.2000 mm, 28.1000 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 1.7100 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(80.2850 mm, 29.9750 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 1.0725 mm
+    @(73.2000 mm, 29.8100 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 0.2687 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(69.2000 mm, 46.3000 mm): Leiterbahn [+3.3VD] auf B.Cu, Länge 0.4243 mm
+    @(64.0000 mm, 40.5500 mm): Pad 2 [+3.3VD] von J7 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(63.5375 mm, 68.9000 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 1.3625 mm
+    @(63.3125 mm, 76.5500 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 0.4419 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(65.0625 mm, 30.9000 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 0.0177 mm
+    @(64.0000 mm, 40.5500 mm): Pad 2 [+3.3VD] von J7 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(63.3129 mm, 63.0700 mm): Leiterbahn [+3.3VD] auf F.Cu, Länge 0.7071 mm
+    @(70.4875 mm, 46.3000 mm): Leiterbahn [+3.3VD] auf B.Cu, Länge 1.2875 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(79.1000 mm, 42.3150 mm): Leiterbahn [+3.3VA] auf B.Cu, Länge 1.3675 mm
+    @(77.9000 mm, 61.9000 mm): Leiterbahn [+3.3VA] auf B.Cu, Länge 0.2828 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(77.7250 mm, 43.3175 mm): Pad 1 [GNDA] von R56 auf F.Cu
+    @(77.2750 mm, 43.5825 mm): Pad 1 [GNDA] von C32 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(77.2000 mm, 35.2500 mm): Pad 4 [GNDA] von U7 auf F.Cu
+    @(76.9000 mm, 34.7625 mm): Pad 1 [GNDA] von C35 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(71.5700 mm, 37.1250 mm): Pad 1 [GNDA] von C28 auf F.Cu
+    @(72.7100 mm, 35.8000 mm): Pad 8 [GNDA] von J6 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(79.1000 mm, 39.7750 mm): Pad 3 [GNDA] von U10 auf B.Cu
+    @(79.6750 mm, 42.7350 mm): Pad 3 [GNDA] von U6 auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(75.9300 mm, 35.2500 mm): Pad 3 [GNDA] von U7 auf F.Cu
+    @(72.7100 mm, 35.8000 mm): Pad 8 [GNDA] von J6 auf B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(79.1000 mm, 38.5050 mm): Pad 4 [GNDA] von U10 auf B.Cu
+    @(83.4200 mm, 37.0750 mm): Pad 1 [GNDA] von R55 auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(84.6000 mm, 34.1000 mm): Zone [GNDA] auf F.Cu
+    @(84.6000 mm, 34.1000 mm): Zone [GNDA] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(79.6750 mm, 44.0050 mm): Pad 4 [GNDA] von U6 auf F.Cu
+    @(80.0625 mm, 63.7000 mm): Leiterbahn [GNDA] auf B.Cu, Länge 2.2627 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(74.8825 mm, 35.4725 mm): Leiterbahn [/analog_inp_3] auf F.Cu, Länge 0.3147 mm
+    @(51.5504 mm, 33.6114 mm): Polygon [/analog_inp_3] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(35.7600 mm, 76.2150 mm): Leiterbahn [/analog_inp_3] auf B.Cu, Länge 1.1050 mm
+    @(37.8957 mm, 101.5409 mm): Polygon [/analog_inp_3] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(39.0000 mm, 65.2483 mm): Polygon [/analog_inp_3] auf F.Cu
+    @(35.7600 mm, 41.9650 mm): Leiterbahn [/analog_inp_3] auf B.Cu, Länge 1.2375 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(33.2200 mm, 76.2150 mm): Leiterbahn [/analog_inp_7] auf B.Cu, Länge 1.0450 mm
+    @(37.9000 mm, 98.0492 mm): Polygon [/analog_inp_7] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(38.9001 mm, 63.8020 mm): Polygon [/analog_inp_7] auf F.Cu
+    @(33.2200 mm, 41.9650 mm): Leiterbahn [/analog_inp_7] auf B.Cu, Länge 1.2375 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(36.0042 mm, 23.8180 mm): Polygon [/analog_inp_7] auf F.Cu
+    @(71.0900 mm, 40.2100 mm): Leiterbahn [/analog_inp_7] auf F.Cu, Länge 0.0141 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(38.8992 mm, 63.8682 mm): Polygon [/analog_inp_5] auf F.Cu
+    @(26.5946 mm, 41.7022 mm): Polygon [/analog_inp_5] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(38.1500 mm, 99.0500 mm): Polygon [/analog_inp_5] auf F.Cu
+    @(34.4900 mm, 76.2150 mm): Leiterbahn [/analog_inp_5] auf B.Cu, Länge 0.6375 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(34.4900 mm, 41.9650 mm): Leiterbahn [/analog_inp_5] auf B.Cu, Länge 0.7375 mm
+    @(68.1800 mm, 37.1250 mm): Leiterbahn [/analog_inp_5] auf F.Cu, Länge 2.5809 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(37.9000 mm, 96.9000 mm): Polygon [/analog_inp_2] auf F.Cu
+    @(36.8500 mm, 81.4000 mm): Via [/analog_inp_2] auf F.Cu - B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(37.0300 mm, 45.6500 mm): Leiterbahn [/analog_inp_2] auf B.Cu, Länge 0.7800 mm
+    @(36.9840 mm, 61.7267 mm): Polygon [/analog_inp_2] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(43.4000 mm, 41.3000 mm): Polygon [/analog_inp_2] auf F.Cu
+    @(74.9000 mm, 44.2000 mm): Leiterbahn [/analog_inp_2] auf F.Cu, Länge 3.8290 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(41.7335 mm, 105.4845 mm): Polygon [/analog_inp_1] auf F.Cu
+    @(37.0300 mm, 76.2150 mm): Leiterbahn [/analog_inp_1] auf B.Cu, Länge 1.6950 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(43.4176 mm, 71.4000 mm): Polygon [/analog_inp_1] auf F.Cu
+    @(37.0300 mm, 41.9650 mm): Leiterbahn [/analog_inp_1] auf B.Cu, Länge 0.4450 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(43.1000 mm, 41.3000 mm): Polygon [/analog_inp_1] auf F.Cu
+    @(74.9000 mm, 41.7300 mm): Leiterbahn [/analog_inp_1] auf F.Cu, Länge 1.8300 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(38.2200 mm, 95.3500 mm): Polygon [/analog_inp_6] auf F.Cu
+    @(34.2500 mm, 82.3500 mm): Via [/analog_inp_6] auf F.Cu - B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(34.4900 mm, 47.5400 mm): Leiterbahn [/analog_inp_6] auf B.Cu, Länge 1.0748 mm
+    @(36.1954 mm, 60.0822 mm): Polygon [/analog_inp_6] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(34.4069 mm, 49.0793 mm): Polygon [/analog_inp_6] auf F.Cu
+    @(72.3600 mm, 45.8000 mm): Leiterbahn [/analog_inp_6] auf F.Cu, Länge 1.0250 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(73.6300 mm, 44.0595 mm): Leiterbahn [/analog_inp_4] auf F.Cu, Länge 1.7405 mm
+    @(68.4900 mm, 62.2200 mm): Leiterbahn [/analog_inp_4] auf F.Cu, Länge 0.8200 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(50.8000 mm, 41.7000 mm): Polygon [/analog_inp_4] auf F.Cu
+    @(69.1000 mm, 42.3000 mm): Leiterbahn [/analog_inp_4] auf B.Cu, Länge 0.4243 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(35.7600 mm, 81.5900 mm): Leiterbahn [/analog_inp_4] auf B.Cu, Länge 0.5091 mm
+    @(37.9000 mm, 96.0993 mm): Polygon [/analog_inp_4] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(44.2000 mm, 61.8000 mm): Polygon [/analog_inp_4] auf F.Cu
+    @(36.2725 mm, 47.4000 mm): Leiterbahn [/analog_inp_4] auf B.Cu, Länge 1.6275 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(37.9000 mm, 97.7992 mm): Polygon [/analog_inp_9] auf F.Cu
+    @(31.9500 mm, 76.2150 mm): Leiterbahn [/analog_inp_9] auf B.Cu, Länge 0.3850 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(31.9500 mm, 41.9650 mm): Leiterbahn [/analog_inp_9] auf B.Cu, Länge 10.0150 mm
+    @(38.6000 mm, 62.6000 mm): Polygon [/analog_inp_9] auf F.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(31.9500 mm, 41.9650 mm): Leiterbahn [/analog_inp_9] auf B.Cu, Länge 10.0150 mm
+    @(69.8000 mm, 39.5000 mm): Leiterbahn [/analog_inp_9] auf F.Cu, Länge 2.2100 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(68.8900 mm, 63.0700 mm): Leiterbahn [/analog_inp_8] auf F.Cu, Länge 0.3600 mm
+    @(71.0900 mm, 45.8000 mm): Leiterbahn [/analog_inp_8] auf F.Cu, Länge 1.5100 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(36.2487 mm, 94.8419 mm): Polygon [/analog_inp_8] auf F.Cu
+    @(33.4000 mm, 82.8500 mm): Via [/analog_inp_8] auf F.Cu - B.Cu
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(36.2996 mm, 58.6548 mm): Polygon [/analog_inp_8] auf F.Cu
+    @(33.0000 mm, 47.3000 mm): Leiterbahn [/analog_inp_8] auf B.Cu, Länge 1.8000 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(36.2996 mm, 58.6548 mm): Polygon [/analog_inp_8] auf F.Cu
+    @(68.0400 mm, 63.5600 mm): Leiterbahn [/analog_inp_8] auf F.Cu, Länge 1.7800 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(66.5600 mm, 64.3400 mm): Leiterbahn [/fil_da1] auf F.Cu, Länge 1.2021 mm
+    @(66.5400 mm, 36.5000 mm): Leiterbahn [/fil_da1] auf B.Cu, Länge 1.0750 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(78.2125 mm, 48.4000 mm): Leiterbahn [/fil_da2] auf F.Cu, Länge 8.2753 mm
+    @(65.2900 mm, 66.4100 mm): Leiterbahn [/fil_da2] auf B.Cu, Länge 2.0700 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(70.1700 mm, 31.7500 mm): Leiterbahn [/fil_da3] auf B.Cu, Länge 2.8950 mm
+    @(70.1600 mm, 65.4600 mm): Leiterbahn [/fil_da3] auf F.Cu, Länge 1.1200 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(68.8900 mm, 65.0400 mm): Leiterbahn [/fil_da5] auf F.Cu, Länge 0.7000 mm
+    @(68.9000 mm, 31.7500 mm): Leiterbahn [/fil_da5] auf B.Cu, Länge 3.1113 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(66.5600 mm, 63.0700 mm): Leiterbahn [/fil_da6] auf B.Cu, Länge 1.7536 mm
+    @(71.4000 mm, 43.0000 mm): Leiterbahn [/fil_da6] auf B.Cu, Länge 1.8385 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(63.6679 mm, 62.2200 mm): Leiterbahn [/fil_da7] auf B.Cu, Länge 0.7721 mm
+    @(69.8500 mm, 48.1500 mm): Leiterbahn [/fil_da7] auf B.Cu, Länge 0.4950 mm
+[unconnected_items]: Fehlende Verbindung zwischen Elementen
+    Local override; error
+    @(63.4808 mm, 61.7000 mm): Leiterbahn [/fil_da9] auf B.Cu, Länge 9.6192 mm
+    @(76.5000 mm, 28.3000 mm): Leiterbahn [/fil_da9] auf B.Cu, Länge 4.8790 mm
+
+** Found 0 Footprint errors **
+
+** End of Report **

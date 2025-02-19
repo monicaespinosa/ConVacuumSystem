@@ -1097,12 +1097,6 @@
 		(uuid "3b2f31f3-655e-44a3-bf6e-492b3be990c6")
 	)
 	(junction
-		(at 218.44 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3ba973e3-42f1-4798-856e-6f6789c8196b")
-	)
-	(junction
 		(at 177.8 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1776,7 +1770,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 39.37) (xy 218.44 39.37)
+			(xy 231.14 39.37) (xy 220.98 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3126,7 +3120,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 39.37) (xy 218.44 38.1)
+			(xy 220.98 39.37) (xy 220.98 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3666,16 +3660,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 49.53) (xy 218.44 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfdf63b2-7eb5-4851-991f-9df10abf0d98")
-	)
-	(wire
-		(pts
 			(xy 26.67 135.89) (xy 26.67 137.16)
 		)
 		(stroke
@@ -4143,16 +4127,6 @@
 			(type default)
 		)
 		(uuid "fad3de0b-a526-4312-a62d-b7a68ed58f0f")
-	)
-	(wire
-		(pts
-			(xy 218.44 39.37) (xy 218.44 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc995e20-6515-47ac-ab50-0ca357503996")
 	)
 	(wire
 		(pts
@@ -5374,72 +5348,6 @@
 			(justify right)
 		)
 		(uuid "fac09252-9ad1-48ee-aac3-32c9d87cd39c")
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 218.44 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01350441-a14e-4019-9c2f-6329688f2d04")
-		(property "Reference" "#PWR038"
-			(at 218.44 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 218.44 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 218.44 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 218.44 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4a96e022-09a0-4c44-bd4a-15b1d1586864")
-		)
-		(instances
-			(project "Final_PCB"
-				(path "/160fd78b-052f-42a7-9b7c-961e371280e5/1bce4860-ff53-4a06-a9be-ec3e27221410"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GNDD")
@@ -11021,76 +10929,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 218.44 45.72 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ab928e4b-bd32-41b9-93a4-5eb90adc19f2")
-		(property "Reference" "C19"
-			(at 214.63 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 214.63 46.9899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 219.4052 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 218.44 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 218.44 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0a3d2cd4-c878-4759-9f6f-f51643d70906")
-		)
-		(pin "1"
-			(uuid "081fdef5-926d-4c5b-b585-42539d17c6b4")
-		)
-		(instances
-			(project "Final_PCB"
-				(path "/160fd78b-052f-42a7-9b7c-961e371280e5/1bce4860-ff53-4a06-a9be-ec3e27221410"
-					(reference "C19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 219.71 92.71 0)
 		(mirror x)
 		(unit 1)
@@ -12108,7 +11946,7 @@
 	(symbol
 		(lib_name "+3.3V_1")
 		(lib_id "power:+3.3V")
-		(at 218.44 38.1 0)
+		(at 220.98 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12116,7 +11954,7 @@
 		(dnp no)
 		(uuid "d7693ba5-20ce-4211-85df-6c48a6707a06")
 		(property "Reference" "#PWR037"
-			(at 218.44 41.91 0)
+			(at 220.98 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12125,7 +11963,7 @@
 			)
 		)
 		(property "Value" "+3.3VD"
-			(at 216.154 34.544 0)
+			(at 218.694 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12133,7 +11971,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 38.1 0)
+			(at 220.98 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12142,7 +11980,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 38.1 0)
+			(at 220.98 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12151,7 +11989,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 218.44 38.1 0)
+			(at 220.98 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
