@@ -1,4 +1,4 @@
-23843122154135114
+23848342307955314
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -56706,6 +56706,27 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+FLE-107-01-G-DV-K-TR
+FLE-107-01-G-DV-K-TR
+DOUBLE ROW 0.050"X0.050" STRIP ASSEMBLY.
+
+0
+14
+14
+FTS-107-01-L-D-P
+SAMTEC_FTS-107-01-L-D
+
+
+0
+14
+14
+FTSH-107-01-L-DV-K
+SAMTEC_FTSH-107-01-L-DV-K
+
+
+0
+14
+14
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
