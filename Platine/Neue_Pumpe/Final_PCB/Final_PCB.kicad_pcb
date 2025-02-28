@@ -18443,7 +18443,7 @@
 			(solder_mask_margin 0.102)
 			(uuid "45a1d756-46f7-4446-abda-144a9c36c185")
 		)
-		(model "C:/Users/dasa/OneDrive/Documents/RUB/Bachelorarbeit/Footprints/OSTTE020104/OSTTE020104.step"
+		(model "C:/Users/huawei/OneDrive/Documents/RUB/Bachelorarbeit/Footprints/OSTTE020104/OSTTE020104.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36385,7 +36385,7 @@
 			(xy 68.95 34.43) (xy 68.95 33.16)
 		)
 		(height 0)
-		(gr_text "1.2700 mm"
+		(gr_text "1,2700 mm"
 			(at 68.575 33.795 90)
 			(layer "Dwgs.User")
 			(uuid "7ae0359f-1864-40f7-9df4-873272fbbc0c")
@@ -36418,7 +36418,7 @@
 			(xy 68.89 34.43) (xy 68.89 37.91)
 		)
 		(height 2.81)
-		(gr_text "3.4800 mm"
+		(gr_text "3,4800 mm"
 			(at 64.93 36.17 90)
 			(layer "Dwgs.User")
 			(uuid "959079d5-7fa1-45c9-b181-3ad312650e7c")
@@ -36451,7 +36451,7 @@
 			(xy 66.53 39.18) (xy 66.53 37.91)
 		)
 		(height 0)
-		(gr_text "1.2700 mm"
+		(gr_text "1,2700 mm"
 			(at 66.155 38.545 90)
 			(layer "Dwgs.User")
 			(uuid "b448bba7-a27d-4b0a-b1e0-b5fd21068b68")
@@ -36484,7 +36484,7 @@
 			(xy 73.9 60.1) (xy 73.9 58.1)
 		)
 		(height 3.25)
-		(gr_text "2.0000 mm"
+		(gr_text "2,0000 mm"
 			(at 76.35 59.1 90)
 			(layer "Dwgs.User")
 			(uuid "c5964f07-73cd-46d4-9520-1fc9c593841f")
