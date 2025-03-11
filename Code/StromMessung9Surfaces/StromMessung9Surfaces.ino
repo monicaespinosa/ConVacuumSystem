@@ -10,7 +10,6 @@
 // Analog pins that measure voltage
 //const int analogPins[9] = {A0, A1, A2, A3, A4, A5, A6, A7, A8};
 const int analogPins[9] = {A5, A3, A2, A6, A0, A1, A4, A8, A7}; // In order (Out 1, Out2, ..., Out9)
-
 const float minVoltage = 0.05; // Minimum voltage in volts (50mV)
 const float maxVoltage = 3.0;  // Maximum voltage in volts
 const float minCurrent = 0.0;  // Minimum current in mA
@@ -22,6 +21,7 @@ float total_current=0;
 
 void setup() {
   Serial.begin(9600);
+  Serial.println("Total	CenCen	CenRig	UpRig	DowRig	DowLef	DowCen	UpCen	CenLef	UpLef"); // Set graph names
   
   // Set all pins as input
   for (int i = 0; i < 9; i++) {
