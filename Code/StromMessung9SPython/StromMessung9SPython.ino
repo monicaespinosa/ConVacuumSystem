@@ -9,7 +9,7 @@
 
 // Analog pins that measure voltage
 //const int analogPins[9] = {A0, A1, A2, A3, A4, A5, A6, A7, A8};
-const int analogPins[9] = {A5, A3, A2, A6, A0, A1, A4, A8, A7}; // In order (Out 1, Out2, ..., Out9)
+const int analogPins[9] = {A5, A3, A2, A9, A0, A1, A4, A8, A10}; // In order (Out 1, Out2, ..., Out9)
 const float minVoltage = 0.05; // Minimum voltage in volts (50mV)
 const float maxVoltage = 3.0;  // Maximum voltage in volts
 const float minCurrent = 0.0;  // Minimum current in mA
@@ -37,23 +37,36 @@ void loop() {
     rawData[i] = analogRead(analogPins[i]);
     voltages[i] = rawData[i] * (maxVoltage / 1023.0); // Convert to voltage
 
-    // Map voltage to current
-    if (voltages[i] < minVoltage) {
-        currents[i] = minCurrent;
-    } else if (voltages[i] > maxVoltage) {
-        currents[i] = maxCurrent;
-    } else {
-        currents[i] = voltages[i] / 13.5; // Convert voltage to current (mA)
+    if (i==8){
+      currents[i]=(currents[2]+currents[3]+currents[4])/3;
+    } else{
+      // Map voltage to current
+      if (voltages[i] < minVoltage) {
+          currents[i] = minCurrent;
+      } else if (voltages[i] > maxVoltage) {
+          currents[i] = maxCurrent;
+      } else {
+          currents[i] = voltages[i] / 23.5; // Convert voltage to current (mA)
+      }
+      total_current+=currents[i];
     }
-    total_current+=currents[i];
   }
-
+  
   for (int i = 0; i < 9; i++) {
     Serial.print(currents[i], 3);  // 3 decimals
     Serial.print(",");
   }
   Serial.println(total_current, 3);  // total current
-
+  
+  /*
+  float sum=0;
+  for (float i = 0; i < 9; i++) {
+    Serial.print(i/36, 3);  // 3 decimals
+    Serial.print(",");
+    sum+=i/36;
+  }
+  Serial.println(sum, 3);  // total current
+  */
   delay(150);
 }
 

@@ -6,7 +6,7 @@ import tkinter as tk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 # ---------- CONFIGURACIÓN ----------
-PORT = 'COM5'         # Ajusta según tu PC
+PORT = 'COM6'         # Ajusta según tu PC
 BAUD_RATE = 9600
 MAX_CURRENT = 0.4      # mA máximo esperado para mapa de calor
 HISTORY_LENGTH = 50    # para el gráfico de línea
@@ -60,7 +60,12 @@ def update(frame):
             data_history[i].pop(0)
 
     # Actualiza el gráfico de la grilla
-    matrix = np.array(values[:9]).reshape((3, 3))
+    #matrix = np.array(values[:9]).reshape((3, 3))
+    matrix = np.array([
+    values[8], values[6], values[2],
+    values[7], values[0], values[1],
+    values[4], values[5], values[3]
+    ]).reshape((3, 3))
     matrix_plot.set_data(matrix)
 
     # Actualiza las líneas
